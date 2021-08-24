@@ -55,7 +55,6 @@ img{
 }
 .div-wrapper{
     height: 100vh;
-    max-height: 700px;
 }
 #home{
     background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%);
