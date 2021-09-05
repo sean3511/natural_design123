@@ -4,7 +4,6 @@ html{
 font-size: 100%;    
 }
 body{
- /* font-family: 'Open Sans Condensed',"Roboto","poppins",sans-serif; */
  font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif;
  line-height: 1,7;
 }
@@ -15,13 +14,13 @@ img{
     max-width: 100%;
 }
 .logo{
+    margin-top: 50px;
     /* background-color: blue; */
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: 90%;
+    min-width: 130px;
+    height: 40%;
 }
 .main-nav{
+    /* margin-left: -40px; */
     display: flex;
     font-size: 1.25rem;
     list-style: none;
@@ -37,15 +36,12 @@ img{
 .main-nav a:hover{
     color:orange;
 }
-.header-group{
-/* background-color: lawngreen; */
-}
 .page-header{
     /* background-color: darkcyan; */
     /* box-sizing: border-box; */
     height: 120px;
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-between;
 }
 .wrapper{
     max-width: 1300px;
@@ -55,6 +51,7 @@ img{
 }
 .div-wrapper{
     height: 100vh;
+    /* max-height: 700px; */
 }
 #home{
     background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%);
@@ -88,7 +85,6 @@ h1{
     /* background-color: yellow; */
     max-width: 30%;
     height: 100%;
-    /* overflow: hidden; */
 }
 .content-display{
     margin-top: 30px;
