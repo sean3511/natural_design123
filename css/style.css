@@ -230,8 +230,12 @@ input[type=radio] {
   }
   
   .tile {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
     position: relative;
     min-height: 350px;
+    max-height: 350px;
     border-radius: .5em;
     transition: all .15s;
     /* transition: ease-in-out 3s; */
@@ -239,7 +243,8 @@ input[type=radio] {
   }
   
   .green {
-    background: rgba(26, 188, 159, 0.42);
+    /* background: rgba(26, 188, 159, 0.42); */
+    background: rgba(52, 150, 220, 0.44);
   }
   
   .blue {
@@ -247,7 +252,8 @@ input[type=radio] {
   }
   
   .red {
-    background: tomato;
+    /* background: tomato; */
+    background: rgba(52, 150, 220, 0.44);
   }
   .work-grid{
       order: 2;
@@ -260,6 +266,31 @@ input[type=radio] {
       margin-top: 3%;
       margin-bottom: 3%;
   }
+  .portfolio-image{
+    border-radius: .5em;
+    background-repeat: no-repeat;
+    background-image: url(/image/portfolio/phone.png);
+    background-position: center;
+    background-size: cover;
+    /* background-color:white ; */
+    margin: 20px;
+    height: 500px;
+    max-height: 80%;
+ } 
+    .potfolio-word{
+        border-top: 2px white solid;
+        /* background-color:rebeccapurple; */
+        margin: 0 20px;
+ }
+h3{
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(36, 36, 36, 0.6);
+    line-height: 120%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    /* background-color: violet; */
+}
   /* overlay window******************************************************************** */
   .overlay{
     display: flex;
