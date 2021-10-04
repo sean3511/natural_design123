@@ -3,7 +3,7 @@ var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 function showoverlay(){
     overlay.style.display="block";
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     // document.body.style.position = "relative"
     // overlay.style.position ="absolute"
 }
