@@ -14,6 +14,7 @@ function loadImgwork1(){
         addClass(work2Img, 'popup-img');
 		work2Img.src="https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=";   //给img元素的src属性赋值
 		Img_container.appendChild(work2Img);  	//为dom添加子元素img
+        $('.popup-title').html("平面設計<br>Graphic design");
 }
 function showoverlay(){
     //顯示談窗
