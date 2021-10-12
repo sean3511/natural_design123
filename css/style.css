@@ -326,6 +326,14 @@ input[type=radio] {
       grid-auto-rows: 300px;
       grid-auto-flow: row dense;
   }
+h4{
+  /* text-shadow: 2px 2px 5px rgba(36, 36, 36, 0.6); */
+  line-height: 120%;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  /* background-color: violet; */
+}
 h3{
     text-shadow: 2px 2px 5px rgba(36, 36, 36, 0.6);
     line-height: 120%;
@@ -360,10 +368,20 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 95%;
+    /* background-color: violet; */
+    margin: 0 auto;
     /* 垂直並排 */
 }
+.popup-img{
+  margin-top: 5%;
+  display:block; 
+  /* 背景底圖 */
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .5em;
+}
 .popup-photo{
- margin: 10px;
+  margin: 10px;
   width: 600px;
   height: 400px;
   position: relative;
@@ -391,8 +409,20 @@ h3{
   .popup-photo:nth-of-type(6n) {
     background-image: url('https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
   }
+.popup-header{
+  margin: 0 20px;
+  border-bottom: solid 3px rgba(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  /* width: 100%; */
+  /* background-color: tomato; */
+}
 .popup-content {
-    min-height: 1000px;
+  margin-top: 0;
+    /* min-height: 1000px; */
+
     /* border-radius: 5px;  */
 }
 .popup {
@@ -403,8 +433,7 @@ h3{
     position: absolute;
     /* 位置 */
     /* 尺寸 */
-    width: 700px;
-    min-height: 100vh;
+    width: 50vw;
     height: 90vh;
      /* 尺寸 */
     /* 外型裁剪 */
@@ -412,7 +441,7 @@ h3{
     clip-path: inset(0 0 0 0 round 5px);
         /* 外型裁剪 */
     /* scrollbar-width: thin; */
-	padding: 20px;
+	/* padding: 20px; */
 	background: #fff;
     overflow-y: scroll;
     -webkit-animation-name:animatetop;
@@ -458,14 +487,14 @@ background-color: white;
 
     .close {
         display: inline-block;
-        position: absolute;
+        /* position: absolute; */
         width: 20px;
         height: 20px;
-        top: 20px;
-        right: 20px;
+        /* top: 20px;
+        right: 20px; */
         opacity: 0.8;
         transition: all 200ms;
-        font-size: 24px;
+        font-size: 30px;
         font-weight: bold;
         text-decoration: none;
         color: #666;
@@ -474,14 +503,14 @@ background-color: white;
         .close:hover{
             opacity: 1;
         }
-        .popup h2{
-            padding: 80px;
-            margin-top: 0;
-            color: #666;
-            border-top: solid 5px rgba(0, 0, 0, 0.5);
-            border-bottom: solid 5px rgba(0, 0, 0, 0.5);
-            font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-        }
+.close-svg{
+  height: 30px;
+  width: 30px;
+  display:block; 
+  /* 背景底圖 */
+  /* box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2); */
+  border-radius: .5em;
+}
         .popup p{
             color: black;
             margin: 0 0 1em;

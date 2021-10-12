@@ -47,40 +47,40 @@
                 <input type="radio" id="reset" name="color" checked/>
                 <label for="reset">全部</label>
             <div class="work-grid">
+                <div onclick="loadImgwork1(),showoverlay()" class="tile green">
+                    <h3>這是我的作品優</h3>
+                </div>
+                <div onclick="showoverlay()" class="tile red work1">
+                    <h3>這是我的作品優</h3>
+                </div>
+                <div onclick="showoverlay()" class="tile blue">
+                    <h3>這是我的作品優</h3>
+                </div>
                 <div onclick="showoverlay()" class="tile green">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile red">
+                <div onclick="showoverlay()" class="tile red">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile blue">
+                <div onclick="showoverlay()" class="tile green">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile green">
+                <div onclick="showoverlay()" class="tile green">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile red">
+                <div onclick="showoverlay()" class="tile blue">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile green">
+                <div onclick="showoverlay()" class="tile red">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile green">
+                <div onclick="showoverlay()" class="tile blue">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile blue">
+                <div onclick="showoverlay()" class="tile red">
                     <h3>這是我的作品優</h3>
                 </div>
-                <div class="tile red">
-                    <h3>這是我的作品優</h3>
-                </div>
-                <div class="tile blue">
-                    <h3>這是我的作品優</h3>
-                </div>
-                <div class="tile red">
-                    <h3>這是我的作品優</h3>
-                </div>
-                <div class="tile blue">
+                <div onclick="showoverlay()" class="tile blue">
                     <h3>這是我的作品優</h3>
                 </div>
             </div>
@@ -89,13 +89,18 @@
     <div id="full_pop" class="overlay">
                 <div class="popup scroller-bar">
                         <div class="popup-content">
-                                <h2>COCO大ㄋㄟㄋㄟ</h2>
-                                <a onclick="closeoverlay()" class="close">&times;</a>
+                            <div class="popup-header">
+                                <h4 class="popup-title">平面設計<br>Graphic design</h4>
+                                <a onclick="closeoverlay()"><img class="close-svg" src="/image/cross.svg" alt=""></a>
+                             </div>
                                 <div class="popup-photo-container">
+                                        <!-- <div class="popup-photo"></div>
                                         <div class="popup-photo"></div>
                                         <div class="popup-photo"></div>
-                                        <div class="popup-photo"></div>
-                                        <div class="popup-photo"></div>
+                                        <div class="popup-photo"></div> -->
+                                        <!-- <img class="popup-img" src="https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=" alt="">
+                                        <img class="popup-img" src="https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=" alt="">
+                                        <img class="popup-img" src="https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=" alt=""> -->
                                 </div>
                         </div>
                 </div>
