@@ -2,7 +2,25 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+$(".work-sofa-app").click(function(){
+    var work_sofa_Img1 = document.createElement("img");		//创建一个img元素
+        addClass(work_sofa_Img1, 'popup-img');
+        // $("p:first").addClass("intro");
+		work_sofa_Img1.src="/image/portfolio/sofa_app/shop01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_sofa_Img1);  	//为dom添加子元素img
 
+        var work_sofa_Img2 = document.createElement("img");		//创建一个img元素
+        addClass(work_sofa_Img2, 'popup-img');
+		work_sofa_Img2.src="/image/portfolio/sofa_app/shop02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_sofa_Img2);  	//为dom添加子元素img
+        $('.popup-title').html("平面設計<br>Graphic design");
+
+        var work_sofa_Img3 = document.createElement("img");		//创建一个img元素
+        addClass(work_sofa_Img3, 'popup-img');
+		work_sofa_Img3.src="/image/portfolio/sofa_app/shop03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_sofa_Img3);  	//为dom添加子元素img
+        $('.popup-title').html("沙發APP設計<br>Sofa-App design");
+ });
 $(".work1").click(function(){
     var work1Img = document.createElement("img");		//创建一个img元素
         addClass(work1Img, 'popup-img');
