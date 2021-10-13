@@ -413,7 +413,7 @@ h3{
     background-image: url('https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
   }
 .popup-header{
-  margin: 0 20px;
+  margin: 0 3%;
   border-bottom: solid 3px rgba(0, 0, 0);
   display: flex;
   justify-content: space-between;
@@ -424,6 +424,7 @@ h3{
 }
 .popup-content {
   margin-top: 0;
+  margin-left: 1%;
     /* min-height: 1000px; */
 
     /* border-radius: 5px;  */
@@ -487,32 +488,17 @@ background-color: white;
     background-clip: content-box;
 	background-color: rgb(167, 167, 167);
 }
-
-    .close {
-        display: inline-block;
-        /* position: absolute; */
-        width: 20px;
-        height: 20px;
-        /* top: 20px;
-        right: 20px; */
-        opacity: 0.8;
-        transition: all 200ms;
-        font-size: 30px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #666;
-        cursor: pointer;
-        }
-        .close:hover{
-            opacity: 1;
-        }
 .close-svg{
+  opacity: 0.5;
+  transition: all 200ms;
   height: 30px;
   width: 30px;
   display:block; 
   /* 背景底圖 */
   /* box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2); */
-  border-radius: .5em;
+}
+.close-svg:hover{
+  opacity: 1;
 }
         .popup p{
             color: black;
