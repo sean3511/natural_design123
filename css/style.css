@@ -288,6 +288,9 @@ input[type=radio] {
   .work-sofa-app{
     background-image: url(/image/portfolio/sofa_app/shop01.png);
   }
+  .work-shu-app{
+    background-image: url(/image/portfolio/shu_app/shu_app01.png);
+  }
   .green {
     /* background: rgba(52, 150, 220, 0.44); */
   }

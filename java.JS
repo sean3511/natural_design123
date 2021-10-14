@@ -3,7 +3,8 @@ var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
 $(".work-sofa-app").click(function(){
-    var work_sofa_Img1 = document.createElement("img");		//创建一个img元素
+    $('.popup-title').html("沙發APP設計<br>Sofa-App design");
+        var work_sofa_Img1 = document.createElement("img");		//创建一个img元素
         addClass(work_sofa_Img1, 'popup-img');
         // $("p:first").addClass("intro");
 		work_sofa_Img1.src="/image/portfolio/sofa_app/shop01.png";   //给img元素的src属性赋值
@@ -13,26 +14,29 @@ $(".work-sofa-app").click(function(){
         addClass(work_sofa_Img2, 'popup-img');
 		work_sofa_Img2.src="/image/portfolio/sofa_app/shop02.png";   //给img元素的src属性赋值
 		Img_container.appendChild(work_sofa_Img2);  	//为dom添加子元素img
-        $('.popup-title').html("平面設計<br>Graphic design");
 
         var work_sofa_Img3 = document.createElement("img");		//创建一个img元素
         addClass(work_sofa_Img3, 'popup-img');
 		work_sofa_Img3.src="/image/portfolio/sofa_app/shop03.png";   //给img元素的src属性赋值
 		Img_container.appendChild(work_sofa_Img3);  	//为dom添加子元素img
-        $('.popup-title').html("沙發APP設計<br>Sofa-App design");
  });
-$(".work1").click(function(){
-    var work1Img = document.createElement("img");		//创建一个img元素
-        addClass(work1Img, 'popup-img');
+ $(".work-shu-app").click(function(){
+    $('.popup-title').html("世新大學APP設計<br>SHU-App design");
+    var work_shu_Img1 = document.createElement("img");		//创建一个img元素
+        addClass(work_shu_Img1, 'popup-img');
         // $("p:first").addClass("intro");
-		work1Img.src="https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=";   //给img元素的src属性赋值
-		Img_container.appendChild(work1Img);  	//为dom添加子元素img
+		work_shu_Img1.src="/image/portfolio/shu_app/shu_app01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_shu_Img1);  	//为dom添加子元素img
 
-        var work2Img = document.createElement("img");		//创建一个img元素
-        addClass(work2Img, 'popup-img');
-		work2Img.src="https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=";   //给img元素的src属性赋值
-		Img_container.appendChild(work2Img);  	//为dom添加子元素img
-        $('.popup-title').html("平面設計<br>Graphic design");
+        var work_shu_Img2 = document.createElement("img");		//创建一个img元素
+        addClass(work_shu_Img2, 'popup-img');
+		work_shu_Img2.src="/image/portfolio/shu_app/shu_app02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_shu_Img2);  	//为dom添加子元素img
+
+        var work_shu_Img3 = document.createElement("img");		//创建一个img元素
+        addClass(work_shu_Img3, 'popup-img');
+		work_shu_Img3.src="/image/portfolio/shu_app/shu_app03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_shu_Img3);  	//为dom添加子元素img
  });
 $(".tile").click(function(){
      //顯示談窗
@@ -44,6 +48,7 @@ $(".tile").click(function(){
 $(".closer").click(function(){
      //解開滾動
      $(document).unbind("scroll");
+     $('.scroller-bar').scrollTop(0);
      //隱藏彈窗
      overlay.style.display="none";
      //刪除圖片
@@ -57,6 +62,8 @@ window.onclick = function(event){
     if(event.target == overlay){
     //解開滾動
     $(document).unbind("scroll");
+    //重製scroller到頂部
+    $('.scroller-bar').scrollTop(0);
     //隱藏彈窗
     overlay.style.display ="none";
     //刪除圖片
