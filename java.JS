@@ -2,11 +2,32 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+$(".work-game-ui").click(function(){
+    $('.popup-title').html("遊戲UI設計<br>Game-UI design");
+        var work_game_Img1 = document.createElement("img");		//创建一个img元素
+        addClass(work_game_Img1, 'popup-img');
+		work_game_Img1.src="/image/portfolio/game_UI/gameUI_01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_game_Img1);  	//为dom添加子元素img
+
+        var work_game_Img2 = document.createElement("img");		//创建一个img元素
+        addClass(work_game_Img2, 'popup-img');
+		work_game_Img2.src="/image/portfolio/game_UI/gameUI_02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_game_Img2);  	//为dom添加子元素img
+
+        var work_game_Img3 = document.createElement("img");		//创建一个img元素
+        addClass(work_game_Img3, 'popup-img');
+		work_game_Img3.src="/image/portfolio/game_UI/gameUI_03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_game_Img3);  	//为dom添加子元素img
+
+        var work_game_Img4 = document.createElement("img");		//创建一个img元素
+        addClass(work_game_Img4, 'popup-img');
+		work_game_Img4.src="/image/portfolio/game_UI/gameUI_04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(work_game_Img4);  	//为dom添加子元素img
+ });
 $(".work-sofa-app").click(function(){
     $('.popup-title').html("沙發APP設計<br>Sofa-App design");
         var work_sofa_Img1 = document.createElement("img");		//创建一个img元素
         addClass(work_sofa_Img1, 'popup-img');
-        // $("p:first").addClass("intro");
 		work_sofa_Img1.src="/image/portfolio/sofa_app/shop01.png";   //给img元素的src属性赋值
 		Img_container.appendChild(work_sofa_Img1);  	//为dom添加子元素img
 
@@ -24,7 +45,6 @@ $(".work-sofa-app").click(function(){
     $('.popup-title').html("世新大學APP設計<br>SHU-App design");
     var work_shu_Img1 = document.createElement("img");		//创建一个img元素
         addClass(work_shu_Img1, 'popup-img');
-        // $("p:first").addClass("intro");
 		work_shu_Img1.src="/image/portfolio/shu_app/shu_app01.png";   //给img元素的src属性赋值
 		Img_container.appendChild(work_shu_Img1);  	//为dom添加子元素img
 

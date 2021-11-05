@@ -93,9 +93,6 @@ h2{
     font-size: 3rem;
     /* background-color: violet; */
 }
-.popup-content h2{
-    text-align: center;
-}
 .flexer{
     display: flex;
     /* background-color: aquamarine */
@@ -270,10 +267,10 @@ input[type=radio] {
   .tile:hover::after{
       opacity: 0;
   }
- .tile:nth-of-type(3n) {
+ /* .tile:nth-of-type(3n) {
     background-image: url('https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=');
   }
-  
+   */
   .tile:nth-of-type(4n) {
     background-image: url('https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=');
   }
@@ -290,6 +287,9 @@ input[type=radio] {
   }
   .work-shu-app{
     background-image: url(/image/portfolio/shu_app/shu_app01.png);
+  }
+  .work-game-ui{
+    background-image: url(/image/portfolio/game_UI/gameUI_01.png);
   }
   .green {
     /* background: rgba(52, 150, 220, 0.44); */
@@ -511,3 +511,26 @@ background-color: white;
         .popup p:last-child{
             margin: 0;
         }
+@media screen and (max-width: 600px) {
+   .popup {
+    /* 位置 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    /* 位置 */
+    /* 尺寸 */
+    width: 100vw;
+    height: 100vh;
+     /* 尺寸 */
+         /* 外型裁剪歸0 */
+    -webkit-clip-path: inset(0 0 0 0 round 0px);
+    clip-path: inset(0 0 0 0 round 0px);
+        /* 外型裁剪歸0 */
+  }
+  .close-svg{
+    height: 40px;
+    width: 40px;
+    content: url(/image/back.svg);
+  }
+}
