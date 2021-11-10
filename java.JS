@@ -134,4 +134,12 @@ $(document).ready(function() {
     }
    });
 
+ // Function to change the nav-bar on scroll
+ $(window).scroll(function(){
+    ($(window).scrollTop() >= 50) ? (
+        $('.page-header-father').addClass('scrolled')
+    ) : (
+        $('.page-header-father').removeClass('scrolled')
+    );
+});
 
