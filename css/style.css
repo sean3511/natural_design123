@@ -82,7 +82,7 @@ backdrop-filter: blur(5px);
 transition: all 0.3s;
 }
 .wrapper{
-    max-width: 1300px;
+    max-width: 1260px;
     margin: 0 auto;
     padding:0 4%;
     /* background-color: khaki; */
@@ -135,7 +135,7 @@ h2{
     height: 100%;
 }
 .content-display{
-    margin-top: 5%;
+    margin-top: 10%;
     /* background-color: mediumseagreen; */
     position: relative;
     display: flex;
