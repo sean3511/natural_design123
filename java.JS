@@ -133,13 +133,16 @@ $(document).ready(function() {
      window.location = newLocation;
     }
    });
-
- // Function to change the nav-bar on scroll
- $(window).scroll(function(){
+ // 當滾動時畫面的頂部離當前滾動位置>50則增加增加header背景
+$(window).scroll(function(){
     ($(window).scrollTop() >= 50) ? (
-        $('.page-header-father').addClass('scrolled')
+        $('.page-header-bg').addClass('scrolled')
     ) : (
-        $('.page-header-father').removeClass('scrolled')
+        $('.page-header-bg').removeClass('scrolled')
     );
+});
+$(".nav-ham").click(function(){
+    $('.page-header-bg').addClass('header-expend');
+    $('.page-header').addClass('header-limitH');
 });
 
