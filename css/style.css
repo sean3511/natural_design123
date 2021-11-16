@@ -1,13 +1,19 @@
 @charset "UFT-8";
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 html{
-font-size: 100%;    
+font-size: 100%;
 }
 body{
- background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%);
  font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif;
  line-height: 1,7;
+ background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%);
+ background-repeat:no-repeat;
+ /* background:rgba(0,41,77,1) */
  /* overflow: hidden; */
+}
+.index-bg{
+min-height: 100vh;
+/* background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%); */
 }
 /* body::-webkit-scrollbar{
     -webkit-appearance: none;
@@ -168,7 +174,7 @@ span,p{
 }
 /* works css */
 #menu{
-    background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%);
+    /* background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%); */
     min-height: 100vh;
 }
 .work-title-content{

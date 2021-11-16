@@ -144,5 +144,9 @@ $(window).scroll(function(){
 $(".nav-ham").click(function(){
     $('.page-header-bg').addClass('header-expend');
     $('.page-header').addClass('header-limitH');
+    // if($('.page-header-bg').hasClass('header-expend')){
+    //     $('.page-header-bg').removeClass('header-expend');
+    //     $('.page-header-bg').removeClass('header-limitH');
+    // }
 });
 
