@@ -59,6 +59,8 @@ $(".work-sofa-app").click(function(){
 		Img_container.appendChild(work_shu_Img3);  	//为dom添加子元素img
  });
 $(".tile").click(function(){
+    $('.page-header-bg').fadeOut(100)
+    $('.page-header-bg').css("z-index","0")
      //顯示談窗
      overlay.style.display="block";
      //綁定滾動
@@ -66,6 +68,8 @@ $(".tile").click(function(){
      $(document).bind("scroll",function (){$(document).scrollTop(tops); });
   });
 $(".closer").click(function(){
+    $('.page-header-bg').css("z-index","9999")
+    $('.page-header-bg').show();
      //解開滾動
      $(document).unbind("scroll");
      $('.scroller-bar').scrollTop(0);
@@ -80,6 +84,7 @@ $(".closer").click(function(){
   });
 window.onclick = function(event){
     if(event.target == overlay){
+    $('.page-header-bg').css("z-index","9999");
     //解開滾動
     $(document).unbind("scroll");
     //重製scroller到頂部
@@ -160,7 +165,7 @@ $(window).scroll(function(){
 //     $('.page-header-bg').toggleClass('header-expend');
 //     $('.nav-ham-logo').toggleClass('nav-logo-changer');
 // });
-
+$(document).ready(function(){
 $(".nav-ham").click(function(){
     if($(this).hasClass('openclicked')) {
     
@@ -190,4 +195,4 @@ $(".nav-ham").click(function(){
     $('.page-header').toggleClass('header-limitH').fadeTo(0.5,1);
     $('.page-header-bg').toggleClass('header-expend');
 });
-
+})
