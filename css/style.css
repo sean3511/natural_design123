@@ -46,6 +46,12 @@ img{
  height: 50px;
  cursor: pointer;
 }
+.nav-logo-changer{
+  max-width: 50px;
+  max-height: 50px;
+  filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(144deg) brightness(95%) contrast(107%);
+  content: url('/image/cross.svg');
+}
 .main-nav{
     /* margin-left: -40px; */
     display: flex;
