@@ -172,8 +172,6 @@ $(".nav-ham").click(function(){
     //解開滾動
     $(document).unbind("scroll");
     
-    alert("出去了");
-
     $(this).animate({opacity:0},300,function(){
         $('.nav-ham-logo').toggleClass('nav-logo-changer');
     })
@@ -185,7 +183,6 @@ $(".nav-ham").click(function(){
      var tops = $(document).scrollTop();//当页面滚动时，把当前距离赋值给页面，这样保持页面滚动条不动
      $(document).bind("scroll",function (){$(document).scrollTop(tops); });   
 
-        alert("進來了");
         $(this).animate({opacity:0},300,function(){
             $('.nav-ham-logo').toggleClass('nav-logo-changer');
         })
