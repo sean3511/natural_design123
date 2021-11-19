@@ -146,29 +146,14 @@ $(window).scroll(function(){
         $('.page-header-bg').removeClass('scrolled')
     );
 });
-// $(".nav-ham").click(function(){
-//     $('.page-header').toggleClass('header-limitH');
-//     $('.page-header-bg').toggleClass('header-expend');
-//     $('.nav-ham-logo').toggleClass('nav-logo-changer');
-// });
-
-// $(".nav-ham").click(function(){
-//     if($(this).hasClass('openclicked')) {
-//       $(this).removeClass('openclicked');
-//       $(this).addClass('closedclicked');
-//     }
-//     else {
-//       $(this).addClass('openclicked');
-//       $(this).removeClass('closedclicked');
-//     }
-//     $('.page-header').toggleClass('header-limitH').fadeTo(0.5,1);
-//     $('.page-header-bg').toggleClass('header-expend');
-//     $('.nav-ham-logo').toggleClass('nav-logo-changer');
-// });
-$(document).ready(function(){
 $(".nav-ham").click(function(){
     if($(this).hasClass('openclicked')) {
-    
+    //關閉div
+
+    $('.mobile-nav').css("opacity", "1.0").animate({opacity: 0}, 50, function(){
+        $('.mobile-nav').css("visibility", "hidden");
+    });
+
     //解開滾動
     $(document).unbind("scroll");
     
@@ -179,6 +164,9 @@ $(".nav-ham").click(function(){
     $(this).removeClass('openclicked');
     }
     else {
+     //打開div
+     $(".mobile-nav").css({'visibility': "visible",'opacity':'0' }).animate({opacity: 1}, 50);
+
      //綁定滾動
      var tops = $(document).scrollTop();//当页面滚动时，把当前距离赋值给页面，这样保持页面滚动条不动
      $(document).bind("scroll",function (){$(document).scrollTop(tops); });   
@@ -189,7 +177,6 @@ $(".nav-ham").click(function(){
         $(this).animate({opacity:1},300,)
       $(this).addClass('openclicked');
     }
-    $('.page-header').toggleClass('header-limitH').fadeTo(0.5,1);
+    $('.page-header').toggleClass('header-limitH');
     $('.page-header-bg').toggleClass('header-expend');
 });
-})
