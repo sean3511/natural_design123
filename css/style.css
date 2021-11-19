@@ -154,25 +154,23 @@ transition: all 0.3s;
     padding:0 4%;
     /* background-color: khaki; */
 }
-.div-wrapper{
-    height: 100vh;
-    /* max-height: 700px; */
-}
+
 #home{
-    /* background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%); */
+
     min-height: 100vh;
-    overflow: hidden;
 }
 .img-island{
     position: absolute;
     z-index: 0;
     bottom: 0;
     right: 0;
-    /* background-color: turquoise; */
+    background-color: turquoise;
     max-height: 100%;
     max-width: 70%;
 }
 h1{
+  /* overflow: hidden; */
+    display: block;
     padding-left: 30px;
     border-left: white solid 17px;
     text-shadow: 2px 2px 20px rgba(36, 36, 36, 0.8);
@@ -197,20 +195,21 @@ h2{
 .left-word-field{
     z-index: 2;
     position: absolute;
-    /* background-color: yellow; */
+    background-color: yellow;
     max-width: 30%;
     height: 100%;
 }
 .content-display{
     margin-top: 15vh;
-    /* background-color: mediumseagreen; */
+    height: 100vh;;
+    background-color: mediumseagreen;
     position: relative;
     display: flex;
 }
 span,p{
     font-size: 1.1rem;
     /* border-top: white 1px solid; */
-    margin: -5% 0;
+    margin-top: 30%;
     color: white;
     display: inline-block;
 }
@@ -657,4 +656,10 @@ background-color: white;
 .page-header{
   height: 80px;
 }
+/* //處裡封面標題 */
+h1{
+  /* color: antiquewhite; */
+  font-size: 4rem;
 }
+}
+
