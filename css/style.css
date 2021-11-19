@@ -163,16 +163,20 @@ transition: all 0.3s;
 
     min-height: 100vh;
 }
+.img-island-controller{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: brown;
+}
 .img-island{
-    /* position: absolute; */
     display: inline-block;
     z-index: 0;
     bottom: 0;
     right: 0;
-    max-width: 10%;
+    width: 10%;
     background-color: turquoise;
-    /* max-height: 100%; */
-    /* max-width: 70%; */
+    width: 100%;
 }
 h1{
   /* overflow: hidden; */
