@@ -103,6 +103,10 @@ img{
 .main-nav a:hover{
     color:orange;
 }
+.header-block{
+  height: 15vh;
+  background-color: blueviolet;
+}
 .page-header{
     box-sizing: border-box;
       /* padding: 0 6%; */
@@ -160,13 +164,15 @@ transition: all 0.3s;
     min-height: 100vh;
 }
 .img-island{
-    position: absolute;
+    /* position: absolute; */
+    display: inline-block;
     z-index: 0;
     bottom: 0;
     right: 0;
+    max-width: 10%;
     background-color: turquoise;
-    max-height: 100%;
-    max-width: 70%;
+    /* max-height: 100%; */
+    /* max-width: 70%; */
 }
 h1{
   /* overflow: hidden; */
@@ -194,17 +200,20 @@ h2{
 }
 .left-word-field{
     z-index: 2;
-    position: absolute;
     background-color: yellow;
     max-width: 30%;
-    height: 100%;
 }
 .content-display{
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
+    display: flex;
+    flex-direction: column;
     height: 100vh;;
     background-color: mediumseagreen;
-    position: relative;
-    display: flex;
+}
+.content-index{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
 }
 span,p{
     font-size: 1.1rem;
