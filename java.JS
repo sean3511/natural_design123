@@ -180,3 +180,20 @@ $(".nav-ham").click(function(){
     $('.page-header').toggleClass('header-limitH');
     $('.page-header-bg').toggleClass('header-expend');
 });
+//寄信功能
+function sendMail() {
+    let fields = {
+        name: document.querySelector("#name").value,
+        tel: document.querySelector("#tel").value,
+    };
+    let body = '姓名：' + fields.name + '<br>' + '電話：' + fields.tel + '<br>';
+    Email.send({
+        SecureToken: "965067F5D1BE2A32C20EC23CA9DDE3F3F2A1",
+        To: '收件者',
+        From: "寄件者",
+        Subject: "主旨",
+        Body: body,
+    }).then(
+        message => alert(message)
+    );
+}
