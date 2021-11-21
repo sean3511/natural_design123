@@ -188,11 +188,11 @@ function sendMail() {
     };
     let body = '姓名：' + fields.name + '<br>' + '電話：' + fields.tel + '<br>';
     Email.send({
-        SecureToken: "965067F5D1BE2A32C20EC23CA9DDE3F3F2A1",
+        SecureToken: "bf28c141-c10b-40a1-8cff-0690c7cfd992",
         To: '收件者',
         From: "寄件者",
         Subject: "主旨",
-        Body: body,
+        Body: 'hello',
     }).then(
         message => alert(message)
     );
