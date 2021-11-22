@@ -59,8 +59,7 @@ $(".work-sofa-app").click(function(){
 		Img_container.appendChild(work_shu_Img3);  	//为dom添加子元素img
  });
 $(".tile").click(function(){
-    $('.page-header-bg').fadeOut(100)
-    $('.page-header-bg').css("z-index","0")
+    $('.page-header-bg').css("z-index","5")
      //顯示談窗
      overlay.style.display="block";
      //綁定滾動
@@ -69,7 +68,6 @@ $(".tile").click(function(){
   });
 $(".closer").click(function(){
     $('.page-header-bg').css("z-index","9999")
-    $('.page-header-bg').show();
      //解開滾動
      $(document).unbind("scroll");
      $('.scroller-bar').scrollTop(0);
@@ -187,12 +185,13 @@ function sendMail() {
         tel: document.querySelector("#tel").value,
     };
     let body = '姓名：' + fields.name + '<br>' + '電話：' + fields.tel + '<br>';
+    let yourmail =
     Email.send({
-        SecureToken: "bf28c141-c10b-40a1-8cff-0690c7cfd992",
-        To: '收件者',
-        From: "寄件者",
-        Subject: "主旨",
-        Body: 'hello',
+        SecureToken: "d815300e-d286-48d6-b1c5-c11b99cddec0",
+        To: 'natural.design.sean@gmail.com',
+        From: 'natural.design.sean@gmail.com',
+        Subject: "信件測試",
+        Body: body,
     }).then(
         message => alert(message)
     );
