@@ -189,7 +189,7 @@ function sendMail() {
     if(fields.name && fields.mail && fields.message != ""){
     let yourmail =
     Email.send({
-        SecureToken: "d815300e-d286-48d6-b1c5-c11b99cddec0",
+        SecureToken: "99c91cc6-0b64-47c2-9cbc-212639e3a276",
         To: 'natural.design.sean@gmail.com',
         From: 'natural.design.sean@gmail.com',
         Subject: "信件測試",
