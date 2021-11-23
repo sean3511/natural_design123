@@ -217,6 +217,13 @@ h2{
     height: 100vh;;
     /* background-color: mediumseagreen; */
 }
+.contact-content-display{
+  /* margin-top: 15vh; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;;
+  /* background-color: mediumseagreen; */
+}
 .content-index{
   flex-grow: 1;
   display: flex;
@@ -687,7 +694,7 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   width: 20%;
   background-color:rgba(30,158,207,1);
   border-radius: 8px;
-  margin-top:60px;
+  margin-top:20px;
   padding: 20px;
 }
 .contact-left-area{
