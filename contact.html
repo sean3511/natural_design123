@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
-     <!-- google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
      <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
@@ -39,25 +40,39 @@
         <div class="header-block"></div>
         <h1 class="Contact-title">Contact</h1>
         <div class="content-contact">
-            <div>
+            <div class="contact-left-area">
             <span>如果您想詢問有關本網站的任何信息，請填寫下面的聯繫表格。我會盡快回复你。</span>
             <div class="text-box">
-                <div>
-                     <input class="textarea" type="text" id="name" placeholder="姓名">
-                </div>
-                <div>
-                     <input class="textarea" type="textarea" id="tel" placeholder="電話">
-                </div>
-                <button class="contact-btn" type="button class" onclick="sendMail()">
+                <form action="" method="dialog">
+                     <input class="textarea" name="text" type="text" id="name" placeholder="姓名" required >
+                     <input class="textarea" name="text" type="text" id="mail" placeholder="信箱"  required>
+                    <input class="textarea" name="text" type="text" id="message" placeholder="請輸入訊息"required>
+                    <br>
+                <button class="contact-btn" name="submit" type="submit"  onclick="sendMail()">
                     send
                 </button>
-                </div>
+                </form>
              </div>
-             <div class="contact-info">
-                <h2 class="info-font">聯絡資訊</h2>
-                <p class="info-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates, perferendis aliquid eum ducimus placeat nostrum, accusamus quos, repellendus saepe amet facere praesentium inventore voluptate corporis deleniti vitae! Omnis, non?</p>
             </div>
-    </div>
+            <div class="contact-info">
+                <h5 class="text-info" >聯絡資訊</h5>
+                <p class="text-info">想了解更多，歡迎洽巡我的個人平台</p>
+                <ul class="social-media-list">
+                    <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="#" target="_blank" class="contact-icon">
+                      <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>       
+                  </ul>
+            </div>
+        </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="java.JS"></script>
 <script src="https://smtpjs.com/v3/smtp.js">

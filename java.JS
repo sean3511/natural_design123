@@ -182,17 +182,25 @@ $(".nav-ham").click(function(){
 function sendMail() {
     let fields = {
         name: document.querySelector("#name").value,
-        tel: document.querySelector("#tel").value,
+        mail: document.querySelector("#mail").value,
+        message: document.querySelector('#message').value
     };
-    let body = '姓名：' + fields.name + '<br>' + '電話：' + fields.tel + '<br>';
+    let body = '姓名：' + fields.name + '<br>' + '信箱：' + fields.mail + '<br>' +'訊息:' + fields.message;
+    if(fields.name && fields.mail && fields.message != ""){
     let yourmail =
     Email.send({
         SecureToken: "d815300e-d286-48d6-b1c5-c11b99cddec0",
         To: 'natural.design.sean@gmail.com',
         From: 'natural.design.sean@gmail.com',
         Subject: "信件測試",
-        Body: body,
+        Body: '怎麼辦123',
     }).then(
         message => alert(message)
     );
+    }
 }
+//判定輸入是否錯誤
+// var inputs = document.querySelectorAll('.textarea')
+// inputs.forEach(input =>{})
+// 原文是inputs.forEach(function(input){})
+     
