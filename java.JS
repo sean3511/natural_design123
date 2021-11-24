@@ -186,16 +186,17 @@ function sendMail() {
         message: document.querySelector('#message').value
     };
     let body = '姓名：' + fields.name + '<br>' + '信箱：' + fields.mail + '<br>' +'訊息:' + fields.message;
-    if(fields.name && fields.mail && fields.message != ""){
+    if(fields.name && fields.mail && fields.message != 0){
     let yourmail =
     Email.send({
         SecureToken: "99c91cc6-0b64-47c2-9cbc-212639e3a276",
         To: 'natural.design.sean@gmail.com',
-        From: 'natural.design.sean@gmail.com',
-        Subject: "信件測試",
-        Body: '怎麼辦123',
+        From: String(fields.mail),
+        Subject: "信件成功測試",
+        Body: body,
     }).then(
-        message => alert(message)
+        // message => alert(message)
+        function(message){return alert(message = (message === 'The specified string is not in the form required for an e-mail address.'?'信箱輸入錯誤' : message))}
     );
     }
 }
