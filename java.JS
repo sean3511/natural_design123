@@ -178,8 +178,29 @@ $(".nav-ham").click(function(){
     $('.page-header').toggleClass('header-limitH');
     $('.page-header-bg').toggleClass('header-expend');
 });
+//及時測試信箱正確
+
+var email = document.getElementById('mail');
+
+function checkEmail() {
+    let fields = {
+        mail: document.querySelector("#mail").value,
+    };
+  var reg1 = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/; 
+  if(fields.mail!= 0){
+  if (reg1.test(email.value) == false) {
+    $(".txt-email").addClass('txt-valid')
+  }else if(reg1.test(email.value) == true){
+    $(".txt-email").removeClass('txt-valid')
+  }
+  }
+  else{
+    $(".txt-email").removeClass('txt-valid')
+  }
+}
 //寄信功能
 function sendMail() {
+    var myreg = /^([\w]+)(.[\w]+)*@([\w]+)(.[\w]{2,3}){1,2}$/;
     let fields = {
         name: document.querySelector("#name").value,
         mail: document.querySelector("#mail").value,
@@ -187,17 +208,24 @@ function sendMail() {
     };
     let body = '姓名：' + fields.name + '<br>' + '信箱：' + fields.mail + '<br>' +'訊息:' + fields.message;
     if(fields.name && fields.mail && fields.message != 0){
-    let yourmail =
-    Email.send({
-        SecureToken: "99c91cc6-0b64-47c2-9cbc-212639e3a276",
-        To: 'natural.design.sean@gmail.com',
-        From: String(fields.mail),
-        Subject: "信件成功測試",
-        Body: body,
-    }).then(
-        // message => alert(message)
-        function(message){return alert(message = (message === 'The specified string is not in the form required for an e-mail address.'?'信箱輸入錯誤' : message))}
-    );
+        if(myreg.test(fields.mail)!= true){
+             alert('信箱輸入錯誤');
+        }
+        else{
+            let yourmail =
+            Email.send({
+                SecureToken: "99c91cc6-0b64-47c2-9cbc-212639e3a276",
+                To: 'natural.design.sean@gmail.com',
+                // From: String(fields.mail),
+                From: 'natural.design.sean@gmail.com',
+                Subject: "信件成功測試",
+                Body: body,
+            })
+            .then(
+                // message => alert(message)
+                function(message){return alert(message = (message === 'The specified string is not in the form required for an e-mail address.'?'信箱輸入錯誤' : message))}
+            );
+        }
     }
 }
 //判定輸入是否錯誤
