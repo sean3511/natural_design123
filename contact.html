@@ -44,8 +44,8 @@
             <span>如果您想詢問有關本網站的任何信息，請填寫下面的聯繫表格。我會盡快回复你。</span>
             <div class="text-box">
                 <form action="" method="dialog">
-                     <input class="textarea" name="text" type="text" id="name" placeholder="姓名" required >
-                     <input class="textarea txt-email" onblur="checkEmail()"  name="text" type="email" id="mail" placeholder="信箱"  required>
+                    <input class="textarea" name="text" type="text" id="name" placeholder="姓名" required >
+                    <input class="textarea txt-email" onblur="checkEmail()"  name="text" type="email" id="mail" placeholder="信箱"  required>
                     <textarea class="textarea textarea-msg" type="text" name="text" id="message" placeholder="請輸入訊息"required></textarea>
                     <br>
                 <button class="contact-btn" name="submit" type="submit"  onclick="sendMail()">
@@ -55,8 +55,11 @@
              </div>
             </div>
             <div class="contact-info">
-                <h5 class="text-info" >聯絡資訊</h5>
-                <p class="text-info">想了解更多，歡迎洽巡我的個人平台</p>
+                <!-- <h5 class="text-info" >聯絡資訊</h5>
+                <p class="text-info">想了解更多，歡迎洽巡我的個人平台</p> -->
+                <div class="img-contact-controller">
+                <img class="img-message" src="/image/message.png" alt="">
+                </div>
                      <ul class="social-media-list">
                         <li><a href="#" target="_blank" class="contact-icon">
                         <i class="fa fa-github" aria-hidden="true"></i></a>
@@ -72,6 +75,7 @@
                         </li>
                   </ul>
             </div>
+        </div>
         </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="java.JS"></script>

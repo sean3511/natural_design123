@@ -3,6 +3,11 @@
 html{
 font-size: 100%;
 }
+form{
+width: 100%;
+display: flex;
+flex-direction: column;
+}
 body{
  font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif;
  line-height: 1,7;
@@ -26,6 +31,7 @@ a:visited{
 }
 img{
     max-width: 100%;
+    height:auto;
 }
 .logo{
     margin-top: 5%;
@@ -171,11 +177,29 @@ transition: all 0.3s;
   /* background-color: brown; */
   position: relative;
 }
+
 .img-island{
   max-width: 100%; 
   max-height: 100%; 
   position: absolute; 
   bottom: 0;
+  /* background-color: beige; */
+}
+.img-contact-controller{
+  display: flex;
+  flex-grow: 1;
+  /* align-items: flex-end; */
+  justify-content: center;
+  background-color: brown;
+  position: relative;
+}
+.img-message{
+  display: block;
+  max-width: 100%; 
+  max-height: 100%; 
+  position: absolute; 
+  /* bottom: 0; */
+  /* background-color: aliceblue; */
 }
 h1{
   /* overflow: hidden; */
@@ -648,7 +672,7 @@ background-color: white;
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .contact-MSG{
   display: flex;
@@ -663,19 +687,20 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 }
 .content-contact span{
   display: block;
-  max-width: 50%;
+  max-width: 85%;
 }
 .text-box{
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  width: 100%;
   /* background-color: violet; */
 }
 .textarea{
   background-color:rgba(255, 255, 255, 0.185);
   /* border-bottom: white solid 2px; */
   padding: 20px;
-  min-width: 50%;
+  margin-right: 20px;
   margin-top:20px;
   border-radius: 8px;
   transition: all .2s;
@@ -701,19 +726,23 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 }
 .contact-btn{
   width: 20%;
+  min-width: 80px;
   background-color:rgba(30,158,207,1);
   border-radius: 8px;
   margin-top:20px;
   padding: 20px;
 }
 .contact-left-area{
-  /* background-color: aqua; */
+  width: 50%;
+  background-color: rgba(102, 255, 0, 0.308);
 }
 .contact-info{
-  display: flexbox;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  /* background-color: wheat; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row-reverse;
+  justify-content: flex-end; */
+  background-color: wheat;
 }
 .contact-info h2{
   font-size: 24px;
@@ -744,14 +773,14 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 
 /* Social Icons */
 .social-media-list {
+  /* background-color: aquamarine; */
   display: block;
-  position: relative;
+  /* position: relative; */
   font-size: 24px;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   /* margin: 0 auto; */
-  margin-top: 20px;
-  padding: 0;
+  margin-top: 40px;
 }
 
 .social-media-list li a {
@@ -872,13 +901,40 @@ h1{
 .left-word-field span{
 display: none;
 }
+.Contact-title{
+text-align: center;
+}
+.contact-info{
+  margin-top: 20px;
+  width: 100%;
+  background-color: wheat;
+}
 .content-contact{
   /* margin-top:60pt; */
   /* flex-grow: 1; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.contact-left-area span{
+  text-align: center;
+}
+.contact-left-area{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.textarea{
+  margin: auto 20px;
+  margin-top: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
 }
 }
 
