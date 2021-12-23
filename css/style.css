@@ -273,6 +273,8 @@ h2{
   max-width: 25%;
 }
 .about-Content{
+  display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.459);
   flex-grow: 1;
   max-width: 75%;
@@ -285,15 +287,18 @@ h2{
   margin-top:20px
 }
 .tool-skill{
+  flex-grow: 1;
+  display: flex;
   margin-top: 20px;
   background-color: #fff;
 }
 .about-tool{
   max-width: 50%;
+  width: 50%;
+  background-color: burlywood;
 }
 .media-controller{
-  width: auto;
-  height: auto;
+ min-width: 50px;
   background-color: red;
 }
 span,p{
