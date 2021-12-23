@@ -275,7 +275,7 @@ h2{
 .about-Content{
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.459);
+  /* background-color: rgba(255, 255, 255, 0.459); */
   flex-grow: 1;
   max-width: 75%;
   padding: 20px;
@@ -289,17 +289,95 @@ h2{
 .tool-skill{
   flex-grow: 1;
   display: flex;
-  margin-top: 20px;
-  background-color: #fff;
+  margin-top: 60px;
+  /* background-color: #fff; */
 }
 .about-tool{
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
-.media-controller{
- min-width: 50px;
-  background-color: red;
+.tool-controller{
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 20px;
+  /* padding: 10px; */
+  /* background-color: blueviolet; */
+}
+/* 加上html跟css */
+.tool-logo{
+  height: 50px;
+  width: 50px;
+  filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(144deg) brightness(95%) contrast(107%);
+}
+.tool-logo:nth-child(1){
+  background-image: url(/image/tool_logo/ps.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(2){
+  background-image: url(/image/tool_logo/ai.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(3){
+  background-image: url(/image/tool_logo/pr.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(4){
+  background-image: url(/image/tool_logo/Xd.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(5){
+  background-image: url(/image/tool_logo/3Dmax.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(6){
+  background-image: url(/image/tool_logo/zbrush.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(7){
+  background-image: url(/image/tool_logo/drangonbone.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(8){
+  background-image: url(/image/tool_logo/substancepainter.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(9){
+  background-image: url(/image/tool_logo/unity.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(10){
+  background-image: url(/image/tool_logo/figma.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
+}
+.tool-logo:nth-child(11){
+  background-image: url(/image/tool_logo/blender.svg);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /* fill: white; */
 }
 span,p{
     font-size: 18px;
