@@ -682,7 +682,7 @@ h4{
   /* text-shadow: 2px 2px 5px rgba(36, 36, 36, 0.6); */
   line-height: 120%;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 22px;
   transition: all 0.3s;
   /* background-color: violet; */
 }
@@ -711,6 +711,7 @@ h5{
 }
   /* overlay window******************************************************************** */
   .overlay{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -729,19 +730,18 @@ h5{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 95%;
+    padding: 0 4%;
     /* background-color: violet; */
-    margin: 0 auto;
     /* 垂直並排 */
 }
 .popup-photo-container:last-child{
   margin-bottom: 4%;
 }
 .popup-img{
-  margin-top: 4%;
+  margin-top: 40px;
   display:block; 
   /* 背景底圖 */
-  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.08);
   border-radius: .5em;
 }
 .popup-photo{
@@ -774,14 +774,17 @@ h5{
     background-image: url('https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
   }
 .popup-header{
-  margin: 0 3%;
+  padding: 0 4%;
+  height: 100px;
+  /* width: 100%; */
+  /* background-color: tomato; */
+}
+.item_nav{
+  height: 100%;
   border-bottom: solid 3px rgba(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  /* width: 100%; */
-  /* background-color: tomato; */
 }
 .popup-content {
   position: sticky;
@@ -1047,23 +1050,6 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 
 
 @media(max-width: 1024px) {
-  .popup {
-    /* 位置 */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: fixed;
-    /* 位置 */
-    /* 尺寸 */
-    width: 100vw;
-    height: 100vh;
-     /* 尺寸 */
-         /* 外型裁剪歸0 */
-    -webkit-clip-path: inset(0 0 0 0 round 0px);
-    clip-path: inset(0 0 0 0 round 0px);
-        /* 外型裁剪歸0 */
-        
-  }
   .scroller-bar::-webkit-scrollbar
   {
     width: 4px;
@@ -1073,8 +1059,8 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
     border: 0;
   }
     .close-svg{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     content: url(/image/back.svg);
   }
   label {
@@ -1227,6 +1213,53 @@ form{
 }
 
 @media(max-width: 770px) {
+  .popup {
+    /* 位置 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 80px;
+    transform: none;
+    position: fixed;
+    /* 位置 */
+    /* 尺寸 */
+    width: 100vw;
+    height: 100vh;
+     /* 尺寸 */
+         /* 外型裁剪歸0 */
+    -webkit-clip-path: inset(0 0 0 0 round 0px);
+    clip-path: inset(0 0 0 0 round 0px);
+        /* 外型裁剪歸0 */
+        
+  }
+  .popup-header{
+    padding: 0 4%;
+    height: 80px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    /* z-index: 100; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100vw;
+    /* width: 100%; */
+    /* background-color: tomato; */
+  }
+  .item_nav{
+    height: 100%;
+    border-bottom: solid 0px rgba(0, 0, 0);
+    display: flex;
+    justify-content:flex-end;
+    flex-direction:row-reverse;
+    align-items: center;
+  }
+  .popup-title{
+    margin-left: 20px;
+  }
   .about-index h3{
     /* font-size: 1.3rem; */
     font-size: 18px;

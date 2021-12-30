@@ -3,7 +3,7 @@ var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
 $(".work-game-ui").click(function(){
-    $('.popup-title').html("遊戲UI設計<br>Game-UI design");
+    $('.popup-title').html("遊戲UI設計");
         var work_game_Img1 = document.createElement("img");		//创建一个img元素
         addClass(work_game_Img1, 'popup-img');
 		work_game_Img1.src="/image/portfolio/game_UI/gameUI_01.png";   //给img元素的src属性赋值
@@ -25,7 +25,7 @@ $(".work-game-ui").click(function(){
 		Img_container.appendChild(work_game_Img4);  	//为dom添加子元素img
  });
 $(".work-sofa-app").click(function(){
-    $('.popup-title').html("沙發APP設計<br>Sofa-App design");
+    $('.popup-title').html("沙發APP設計");
         var work_sofa_Img1 = document.createElement("img");		//创建一个img元素
         addClass(work_sofa_Img1, 'popup-img');
 		work_sofa_Img1.src="/image/portfolio/sofa_app/shop01.png";   //给img元素的src属性赋值
@@ -42,7 +42,7 @@ $(".work-sofa-app").click(function(){
 		Img_container.appendChild(work_sofa_Img3);  	//为dom添加子元素img
  });
  $(".work-shu-app").click(function(){
-    $('.popup-title').html("世新大學APP設計<br>SHU-App design");
+    $('.popup-title').html("世新大學APP設計");
     var work_shu_Img1 = document.createElement("img");		//创建一个img元素
         addClass(work_shu_Img1, 'popup-img');
 		work_shu_Img1.src="/image/portfolio/shu_app/shu_app01.png";   //给img元素的src属性赋值
