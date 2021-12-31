@@ -59,42 +59,70 @@ $(".work-sofa-app").click(function(){
 		Img_container.appendChild(work_shu_Img3);  	//为dom添加子元素img
  });
 $(".tile").click(function(){
+    //讓header透明
+    $('.page-header-bg').addClass('header-bg-visable');
     $('.page-header-bg').css("z-index","5")
+
      //顯示談窗
      overlay.style.display="block";
      //綁定滾動
      var tops = $(document).scrollTop();//当页面滚动时，把当前距离赋值给页面，这样保持页面滚动条不动
      $(document).bind("scroll",function (){$(document).scrollTop(tops); });
+
+     if(screen.width < 770){
+        $('#full_pop').addClass("slider");
+     }
   });
 $(".closer").click(function(){
+    //讓header透明
+    $('.page-header-bg').removeClass('header-bg-visable');
     $('.page-header-bg').css("z-index","9999")
      //解開滾動
      $(document).unbind("scroll");
      $('.scroller-bar').scrollTop(0);
      //隱藏彈窗
+     if(screen.width > 770)
+     {
      overlay.style.display="none";
+    }
      //刪除圖片
      var child = Img_container.lastElementChild;  
      while (child) { 
          Img_container.removeChild(child); 
          child = Img_container.lastElementChild; 
-   } 
+     } 
+
+     if(screen.width < 770){
+        $('#full_pop').removeClass("slider");
+        setTimeout(() => { overlay.style.display="none"; }, 500);
+    }
   });
 window.onclick = function(event){
     if(event.target == overlay){
-    $('.page-header-bg').css("z-index","9999");
-    //解開滾動
-    $(document).unbind("scroll");
-    //重製scroller到頂部
-    $('.scroller-bar').scrollTop(0);
-    //隱藏彈窗
-    overlay.style.display ="none";
-    //刪除圖片
-    var child = Img_container.lastElementChild;  
-    while (child) { 
-        Img_container.removeChild(child); 
-        child = Img_container.lastElementChild; 
-    } 
+        //讓header透明
+        $('.page-header-bg').removeClass('header-bg-visable');
+        $('.page-header-bg').css("z-index","9999");
+        //解開滾動
+        $(document).unbind("scroll");
+        //重製scroller到頂部
+        $('.scroller-bar').scrollTop(0);
+        //隱藏彈窗
+        if(screen.width > 770)
+        {
+        overlay.style.display="none";
+        }
+     //刪
+        //刪除圖片
+        var child = Img_container.lastElementChild;  
+        while (child) { 
+            Img_container.removeChild(child); 
+            child = Img_container.lastElementChild; 
+        } 
+        
+        if(screen.width < 770){
+            $('#full_pop').removeClass("slider");
+            setTimeout(() => { overlay.style.display="none"; }, 500);
+        }
     }
 }
 //創建元素在所選的作品

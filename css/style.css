@@ -154,6 +154,10 @@ background-color: rgba(0,0,0,0.7);
 backdrop-filter: blur(5px);
 transition: all 0.3s;
 }
+.header-bg-visable{
+  background-color: rgba(0,0,0,0);
+  backdrop-filter: blur(0px);
+}
 .header-expend{
   bottom: 0;
   height: 100%;
@@ -725,6 +729,7 @@ h5{
     /* opacity: 0; */
     display: none;
     overflow: hidden;
+    transition: all .5s;
 }
 .popup-photo-container{
     display: flex;
@@ -776,8 +781,9 @@ h5{
 .popup-header{
   padding: 0 4%;
   height: 100px;
+  /* transition: all 0.8s; */
   /* width: 100%; */
-  /* background-color: tomato; */
+  background-color:white;
 }
 .item_nav{
   height: 100%;
@@ -811,7 +817,7 @@ h5{
         /* 外型裁剪 */
     /* scrollbar-width: thin; */
 	/* padding: 20px; */
-	background: #fff;
+	  background: #fff;
     overflow-y: scroll;
     -webkit-animation-name:animatetop;
     -webkit-animation-duration: 1s;
@@ -1213,6 +1219,27 @@ form{
 }
 
 @media(max-width: 770px) {
+  .overlay{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    /* opacity: 0; */
+    display: none;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all .5s;
+}
+.slider{
+  transform: translateX(0%);
+}
   .popup {
     /* 位置 */
     top: 0;
@@ -1226,6 +1253,7 @@ form{
     /* 尺寸 */
     width: 100vw;
     height: 100vh;
+    background-color: rgb(240, 240, 240);
      /* 尺寸 */
          /* 外型裁剪歸0 */
     -webkit-clip-path: inset(0 0 0 0 round 0px);
@@ -1236,8 +1264,10 @@ form{
   .popup-header{
     padding: 0 4%;
     height: 80px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    /* background-color: rgba(0,0,0,0.3); */
+    backdrop-filter: blur(5px);
+    /* transition: all 0.8s; */
     /* z-index: 100; */
     position: fixed;
     width: 100%;
@@ -1250,6 +1280,7 @@ form{
     /* background-color: tomato; */
   }
   .item_nav{
+    position: relative;
     height: 100%;
     border-bottom: solid 0px rgba(0, 0, 0);
     display: flex;
@@ -1258,7 +1289,10 @@ form{
     align-items: center;
   }
   .popup-title{
-    margin-left: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  position: absolute;
   }
   .about-index h3{
     /* font-size: 1.3rem; */
