@@ -155,8 +155,7 @@ backdrop-filter: blur(5px);
 transition: all 0.3s;
 }
 .header-bg-visable{
-  background-color: rgba(0,0,0,0);
-  backdrop-filter: blur(0px);
+ opacity: 0;
 }
 .header-expend{
   bottom: 0;
@@ -308,6 +307,7 @@ h2{
   justify-content: center;
 }
 .main-intro h1{
+  margin-top: -40px;
   border:none;
 }
 .main-intro  h2{
@@ -341,6 +341,84 @@ position: relative;
   padding-top: 160px;
   border-top: rgba(255, 255, 255, 0.5) solid 1px;
 }
+
+/* about頁面滾輪 */
+
+.arrow_container {
+  /* position: fixed; */
+  position: absolute;
+  bottom: 10vh;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s;
+}
+.arrow_visable{
+  opacity: 0;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(25px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
 /* .about-intro p{
   max-width: 100%;
   word-wrap: break-word;
@@ -1296,7 +1374,8 @@ form{
   }
   .about-index h3{
     /* font-size: 1.3rem; */
-    font-size: 18px;
+    letter-spacing: 0px;
+    font-size: 16px;
     /* background-color: violet; */
   }
   /* .textarea{
@@ -1316,6 +1395,7 @@ form{
     /* justify-content: space-between; */
     /* background-color: rgba(0, 0, 0, 0.2); */
   }
+  
 }
 @media(max-width: 684px) {
   .work-grid{

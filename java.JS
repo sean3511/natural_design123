@@ -171,6 +171,12 @@ $(window).scroll(function(){
     ) : (
         $('.page-header-bg').removeClass('scrolled')
     );
+
+    ($(window).scrollTop() >= 100) ? (
+        $('.arrow_container').addClass('arrow_visable')
+    ) : (
+        $('.arrow_container').removeClass('arrow_visable')
+    );
 });
 $(".nav-ham").click(function(){
     if($(this).hasClass('openclicked')) {
