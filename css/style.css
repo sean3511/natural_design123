@@ -695,7 +695,7 @@ input[type=radio] {
   .tile:hover::after{
       opacity: 0;
   }
- .tile:nth-of-type(3n) {
+ /* .tile:nth-of-type(3n) {
     background-image: url('/image/portfolio/game_UI/gameUI_01.png');
   }
   .tile:nth-of-type(4n) {
@@ -708,6 +708,9 @@ input[type=radio] {
   
   .tile:nth-of-type(6n) {
     background-image: url(/image/portfolio/pileup/mock_01.png);
+  } */
+  #player,#player2{
+    display: none;
   }
   .work-sofa-app{
     background-image: url(/image/portfolio/sofa_app/shop01.png);
@@ -727,7 +730,12 @@ input[type=radio] {
     background-position:center top;
   }
   .work-pile-up{
-    background-image: url(/image/portfolio/pileup/mock_01.png);
+    background-image: url(/image/portfolio/pileup/mock_02.png);
+  }
+  .work-TAG{
+    background-image: url(/image/portfolio/tag/mock_01.jpg);
+    /* background-image: url(/image/portfolio/tag/mock_02.png); */
+    background-position:center 72%;
   }
   .green {
     /* background: rgba(52, 150, 220, 0.44); */
@@ -875,9 +883,23 @@ h5{
   /* width: 100%; */
   background-color:white;
 }
+#ytcon{
+  display: none;
+  /* position: relative; */
+}
+.popup-header i{
+  color: #000;
+  font-size: 40px;
+  /* text-align: center;
+  display: block;
+  position: absolute;
+  left:8px;
+  bottom: 0px; */
+}
+
 .item_nav{
   height: 100%;
-  border-bottom: solid 3px rgba(0, 0, 0);
+  border-bottom: solid 2px rgba(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1374,7 +1396,7 @@ form{
     height: 100%;
     border-bottom: solid 0px rgba(0, 0, 0);
     display: flex;
-    justify-content:flex-end;
+    /* justify-content:flex-end; */
     flex-direction:row-reverse;
     align-items: center;
   }
@@ -1383,6 +1405,7 @@ form{
     left: 50%;
     transform: translate(-50%,-50%);
   position: absolute;
+  text-align: center;
   }
   .about-index h3{
     /* font-size: 1.3rem; */

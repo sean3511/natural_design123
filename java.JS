@@ -2,6 +2,63 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+
+
+$(".work-TAG").click(function(){
+    $('.popup-title').html("TAG");
+        $('#ytcon').show();
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/tag/mock_01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/tag/mock_02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/tag/mock_03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/tag/mock_04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/tag/mock_05.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元5img
+
+        var Img6 = document.createElement("img");		//创建一个img元素
+        addClass(Img6, 'popup-img');
+		Img6.src="/image/portfolio/tag/item_01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img6);  	//为dom添加子元5img
+
+        var Img7 = document.createElement("img");		//创建一个img元素
+        addClass(Img7, 'popup-img');
+		Img7.src="/image/portfolio/tag/item_02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img7);  	//为dom添加子元5img
+
+        var Img8 = document.createElement("img");		//创建一个img元素
+        addClass(Img8, 'popup-img');
+		Img8.src="/image/portfolio/tag/item_03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img8);  	//为dom添加子元5img
+
+        var Img9 = document.createElement("img");		//创建一个img元素
+        addClass(Img9, 'popup-img');
+		Img9.src="/image/portfolio/tag/item_04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img9);  	//为dom添加子元5img
+
+        var Img10 = document.createElement("img");		//创建一个img元素
+        addClass(Img10, 'popup-img');
+		Img10.src="/image/portfolio/tag/item_05.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img10);  	//为dom添加子元5img
+        
+        //創建yt
+ });
 $(".work-pile-up").click(function(){
     $('.popup-title').html("Pile up");
         var Img1 = document.createElement("img");		//创建一个img元素
@@ -150,6 +207,8 @@ $(".tile").click(function(){
      }
   });
 $(".closer").click(function(){
+    //關閉YT按鈕
+    $('#ytcon').hide();
     //讓header透明
     $('.page-header-bg').removeClass('header-bg-visable');
     $('.page-header-bg').css("z-index","9999")
@@ -161,7 +220,7 @@ $(".closer").click(function(){
      {
      overlay.style.display="none";
     }
-     //刪除圖片
+
      var child = Img_container.lastElementChild;  
      while (child) { 
          Img_container.removeChild(child); 
@@ -175,6 +234,8 @@ $(".closer").click(function(){
   });
 window.onclick = function(event){
     if(event.target == overlay){
+        //關閉YT按鈕
+         $('#ytcon').hide();
         //讓header透明
         $('.page-header-bg').removeClass('header-bg-visable');
         $('.page-header-bg').css("z-index","9999");
@@ -187,8 +248,8 @@ window.onclick = function(event){
         {
         overlay.style.display="none";
         }
-     //刪
         //刪除圖片
+   
         var child = Img_container.lastElementChild;  
         while (child) { 
             Img_container.removeChild(child); 
@@ -434,3 +495,29 @@ mouseX = width / 2;
 mouseY = height / 2;
 
 draw();
+
+// yt
+var player;
+var player2;
+ function onYouTubeIframeAPIReady() {
+ player = new YT.Player('player', {
+     height: '390',
+     width: '640',
+     videoId: 'M7lc1UVf-VE',
+     events: {
+     'onReady': onPlayerReady
+     }
+ });
+ playe2r = new YT.Player('player2', {
+    height: '390',
+    width: '640',
+    videoId: 'M7lc1UVf-VE',
+    events: {
+    'onReady': onPlayerReady
+    }
+});
+ }
+ function onPlayerReady(event) {
+     event.target.playVideo();
+ }
+   
