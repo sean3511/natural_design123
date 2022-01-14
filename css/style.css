@@ -883,7 +883,12 @@ h5{
   /* width: 100%; */
   background-color:white;
 }
-#ytcon{
+.YTandName{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ytcon{
   display: none;
   /* position: relative; */
 }
@@ -895,6 +900,21 @@ h5{
   position: absolute;
   left:8px;
   bottom: 0px; */
+}
+.web{
+  /* visibility: visible; */
+  position: static;
+  display: inline;
+  visibility: visible;
+  pointer-events:auto;
+  margin-left: 10px;
+}
+.mobile{
+  display: none;
+  /* visibility: hidden;
+  position: static;
+  left: 999999rem;
+  bottom:999999rem; */
 }
 
 .item_nav{
@@ -1331,6 +1351,19 @@ form{
 }
 
 @media(max-width: 770px) {
+  .web{
+    position: absolute;
+    left: 999999rem;
+    bottom:999999rem;
+    position: absolute;
+    display: none;
+    visibility: hidden;
+   }
+   .mobile{
+    /* visibility: visible; */
+    display: inline;
+   }
+
   .overlay{
     position: relative;
     display: flex;

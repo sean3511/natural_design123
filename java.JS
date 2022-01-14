@@ -6,7 +6,8 @@ var Img_container = document.getElementsByClassName("popup-photo-container")[0];
 
 $(".work-TAG").click(function(){
     $('.popup-title').html("TAG");
-        $('#ytcon').show();
+        $('.ytcon').show();
+        $('.ytlink').attr('href','https://www.youtube.com/watch?v=0Gwwu1hpssU');
         var Img1 = document.createElement("img");		//创建一个img元素
         addClass(Img1, 'popup-img');
 		Img1.src="/image/portfolio/tag/mock_01.jpg";   //给img元素的src属性赋值
@@ -208,7 +209,7 @@ $(".tile").click(function(){
   });
 $(".closer").click(function(){
     //關閉YT按鈕
-    $('#ytcon').hide();
+    $('.ytcon').hide();
     //讓header透明
     $('.page-header-bg').removeClass('header-bg-visable');
     $('.page-header-bg').css("z-index","9999")
@@ -235,7 +236,7 @@ $(".closer").click(function(){
 window.onclick = function(event){
     if(event.target == overlay){
         //關閉YT按鈕
-         $('#ytcon').hide();
+         $('.ytcon').hide();
         //讓header透明
         $('.page-header-bg').removeClass('header-bg-visable');
         $('.page-header-bg').css("z-index","9999");
@@ -520,4 +521,5 @@ var player2;
  function onPlayerReady(event) {
      event.target.playVideo();
  }
-   
+// 螢幕YT判定
+ 
