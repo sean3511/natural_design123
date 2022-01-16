@@ -2,22 +2,101 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+$(".work-scifi").click(function(){
+    $('.popup-title').html("scifi視覺設計");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/scifi/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
 
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/scifi/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/scifi/mock03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/scifi/mock04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+ });
 $(".work-the-last-trace").click(function(){
     $('.popup-title').html("The Last Trace");
-        // var Img1 = document.createElement("img");		//创建一个img元素
-        // addClass(Img1, 'popup-img');
-		// Img1.src="/image/portfolio/stack/mock_01.jpg";   //给img元素的src属性赋值
-		// Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        // var Img2 = document.createElement("img");		//创建一个img元素
-        // addClass(Img2, 'popup-img');
-		// Img2.src="/image/portfolio/stack/mock_02.png";   //给img元素的src属性赋值
-		// Img_container.appendChild(Img2);  	//为dom添加子元素img
-        // var Img3 = document.createElement("img");		//创建一个img元素
-        // addClass(Img3, 'popup-img');
-		// Img3.src="/image/portfolio/stack/mock_03.jpg";   //给img元素的src属性赋值
-		// Img_container.appendChild(Img3);  	//为dom添加子元素img
+    $('.title_blocker').hide();
+    $('.ytcon').css('display','block'); 
+   $('.ytlink').attr('href','https://www.youtube.com/watch?v=SCfi2EXUZWc');
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/the_last_trace/mock_01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/the_last_trace/mock_02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/the_last_trace/mock_03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/the_last_trace/mock_04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/the_last_trace/mock_05.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+        var Img6 = document.createElement("img");		//创建一个img元素
+        addClass(Img6, 'popup-img');
+		Img6.src="/image/portfolio/the_last_trace/mock_06.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img6);  	//为dom添加子元素img
+        var Img7 = document.createElement("img");		//创建一个img元素
+        addClass(Img7, 'popup-img');
+		Img7.src="/image/portfolio/the_last_trace/mock_07.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img7);  	//为dom添加子元素img
+        var Img8 = document.createElement("img");		//创建一个img元素
+        addClass(Img8, 'popup-img');
+		Img8.src="/image/portfolio/the_last_trace/mock_08.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img8);  	//为dom添加子元素img
+        var Img9 = document.createElement("img");		//创建一个img元素
+        addClass(Img9, 'popup-img');
+		Img9.src="/image/portfolio/the_last_trace/mock_09.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img9);  	//为dom添加子元素img
+        var Img10 = document.createElement("img");		//创建一个img元素
+        addClass(Img10, 'popup-img');
+		Img10.src="/image/portfolio/the_last_trace/mock_10.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img10);  	//为dom添加子元素img
+        var Img11 = document.createElement("img");		//创建一个img元素
+        addClass(Img11, 'popup-img');
+		Img11.src="/image/portfolio/the_last_trace/mock_11.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img11);  	//为dom添加子元素img
+        var Img12 = document.createElement("img");		//创建一个img元素
+        addClass(Img12, 'popup-img');
+		Img12.src="/image/portfolio/the_last_trace/pics01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img12);  	//为dom添加子元素img
+        var Img13 = document.createElement("img");		//创建一个img元素
+        addClass(Img13, 'popup-img');
+		Img13.src="/image/portfolio/the_last_trace/pics02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img13);  	//为dom添加子元素img
+        var Img14 = document.createElement("img");		//创建一个img元素
+        addClass(Img14, 'popup-img');
+		Img14.src="/image/portfolio/the_last_trace/pics03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img14);  	//为dom添加子元素img
+        var Img15 = document.createElement("img");		//创建一个img元素
+        addClass(Img15, 'popup-img');
+		Img15.src="/image/portfolio/the_last_trace/pics04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img15);  	//为dom添加子元素img
+        var Img16 = document.createElement("img");		//创建一个img元素
+        addClass(Img16, 'popup-img');
+		Img16.src="/image/portfolio/the_last_trace/pics05.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img16);  	//为dom添加子元素img
+        var Img17 = document.createElement("img");		//创建一个img元素
+        addClass(Img17, 'popup-img')
+		Img17.src="/image/portfolio/the_last_trace/pics06.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img17);  	//为dom添加子元素img
  });
 $(".work-TAG").click(function(){
     $('.popup-title').html("TAG");

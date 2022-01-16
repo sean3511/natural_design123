@@ -741,6 +741,18 @@ input[type=radio] {
     background-image: url(/image/portfolio/the_last_trace/mock_01.png);
      background-position:center bottom;
   }
+  .work-scifi{
+    background-image: url(/image/portfolio/scifi/mock01.png);
+    /* background-image: url(/image/portfolio/tag/mock_02.png); */
+    /* background-position:center 72%; */
+  }
+  .work-alcholAd{
+    background-image: url(/image/portfolio/alcohol_media/mock01.png)
+  }
+  .work-Ggod{
+    background-image: url(/image/portfolio/girl_god/mock01.png);
+    background-position:center bottom;
+  }
   .green {
     /* background: rgba(52, 150, 220, 0.44); */
   }
