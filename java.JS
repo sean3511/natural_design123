@@ -3,10 +3,26 @@ var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
 
+$(".work-the-last-trace").click(function(){
+    $('.popup-title').html("The Last Trace");
+        // var Img1 = document.createElement("img");		//创建一个img元素
+        // addClass(Img1, 'popup-img');
+		// Img1.src="/image/portfolio/stack/mock_01.jpg";   //给img元素的src属性赋值
+		// Img_container.appendChild(Img1);  	//为dom添加子元素img
 
+        // var Img2 = document.createElement("img");		//创建一个img元素
+        // addClass(Img2, 'popup-img');
+		// Img2.src="/image/portfolio/stack/mock_02.png";   //给img元素的src属性赋值
+		// Img_container.appendChild(Img2);  	//为dom添加子元素img
+        // var Img3 = document.createElement("img");		//创建一个img元素
+        // addClass(Img3, 'popup-img');
+		// Img3.src="/image/portfolio/stack/mock_03.jpg";   //给img元素的src属性赋值
+		// Img_container.appendChild(Img3);  	//为dom添加子元素img
+ });
 $(".work-TAG").click(function(){
     $('.popup-title').html("TAG");
-        $('.ytcon').show();
+         $('.title_blocker').hide();
+         $('.ytcon').css('display','block'); 
         $('.ytlink').attr('href','https://www.youtube.com/watch?v=0Gwwu1hpssU');
         var Img1 = document.createElement("img");		//创建一个img元素
         addClass(Img1, 'popup-img');
@@ -208,12 +224,13 @@ $(".tile").click(function(){
      }
   });
 $(".closer").click(function(){
-    //關閉YT按鈕
-    $('.ytcon').hide();
+    //關閉YT按鈕開啟30px的blocker
+    $('.title_blocker').show();
+    $('.ytcon').css('display','none'); 
     //讓header透明
     $('.page-header-bg').removeClass('header-bg-visable');
     $('.page-header-bg').css("z-index","9999")
-     //解開滾動
+     //解開滾動#
      $(document).unbind("scroll");
      $('.scroller-bar').scrollTop(0);
      //隱藏彈窗
@@ -235,8 +252,9 @@ $(".closer").click(function(){
   });
 window.onclick = function(event){
     if(event.target == overlay){
-        //關閉YT按鈕
-         $('.ytcon').hide();
+        //關閉YT按鈕開啟30px的blocker
+        $('.title_blocker').show();
+        $('.ytcon').css('display','none'); 
         //讓header透明
         $('.page-header-bg').removeClass('header-bg-visable');
         $('.page-header-bg').css("z-index","9999");
@@ -521,5 +539,4 @@ var player2;
  function onPlayerReady(event) {
      event.target.playVideo();
  }
-// 螢幕YT判定
- 
+//判定ytblocker補
