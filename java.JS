@@ -2,6 +2,35 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+$(".work-alcholAd").click(function(){
+    $('.popup-title').html("酒類社群圖文");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/alcohol_media/mock01.png";
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/alcohol_media/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+ });
+$(".work-Ggod").click(function(){
+    $('.popup-title').html("女神543<br>Banner");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/girl_god/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/girl_god/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/girl_god/mock03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+ });
 $(".work-scifi").click(function(){
     $('.popup-title').html("scifi視覺設計");
         var Img1 = document.createElement("img");		//创建一个img元素
