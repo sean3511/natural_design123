@@ -753,6 +753,10 @@ input[type=radio] {
     background-image: url(/image/portfolio/girl_god/mock01.png);
     background-position:center bottom;
   }
+  .work-yipin{
+    background-image: url(/image/portfolio/yipin/mock01.jpg);
+    background-position:center top;
+  }
   .green {
     /* background: rgba(52, 150, 220, 0.44); */
   }
