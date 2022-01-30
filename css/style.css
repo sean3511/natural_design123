@@ -1175,7 +1175,12 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   transform: translate(-50%,-50%); */
   color: #fff;
 }
-
+.contact-icon{
+  display: block;
+  z-index: 30;
+  min-width: 30px;
+  min-height: 30px;
+}
 .social-media-list li {
   position: relative; 
   display: inline-block;
@@ -1202,6 +1207,8 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   opacity: 0;
   box-shadow: 0 0 0 1px #fff;
   transition: all .2s ease-in-out;
+    pointer-events: none;
+  cursor: default;
 }
 
 .social-media-list li:hover {

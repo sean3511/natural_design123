@@ -2,6 +2,7 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+
 $(".work-yipin").click(function(){
     $('.popup-title').html("壹品酒業CIS設計");
         var Img1 = document.createElement("img");		//创建一个img元素
