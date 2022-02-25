@@ -757,6 +757,17 @@ input[type=radio] {
     background-image: url(/image/portfolio/yipin/mock01.jpg);
     background-position:center top;
   }
+  .work-siyi{
+    background-image: url(/image/portfolio/siyi/mock01.jpg);
+  }
+  .work-cosmetic{
+    background-image: url(/image/portfolio/re_cosmetic/cosmetic_01.jpg);
+    background-position:center 90%;
+  }
+  .work-myboom{
+    background-image: url(/image/portfolio/myboom/myboom01.jpg);
+    /* background-position:center 90%; */
+  }
   .green {
     /* background: rgba(52, 150, 220, 0.44); */
   }

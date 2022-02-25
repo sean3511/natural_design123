@@ -3,6 +3,86 @@ var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
 
+
+$(".work-myboom").click(function(){
+    $('.popup-title').html("Myboom");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/myboom/myboom01.jpg";
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/myboom/myboom02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/myboom/myboom03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/myboom/myboom04.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/myboom/myboom05.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+
+        var Img6 = document.createElement("img");		//创建一个img元素
+        addClass(Img6, 'popup-img');
+		Img6.src="/image/portfolio/myboom/myboom06.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img6);  	//为dom添加子元素img
+        
+ });
+$(".work-cosmetic").click(function(){
+    $('.popup-title').html("美妝社群<br>商品圖");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/re_cosmetic/cosmetic_01.jpg";
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/re_cosmetic/cosmetic_02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/re_cosmetic/cosmetic_03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/re_cosmetic/cosmetic_04.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/re_cosmetic/cosmetic_05.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+
+ });
+$(".work-siyi").click(function(){
+    $('.popup-title').html("溢紘工程<br>T-shirt");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/siyi/mock01.jpg";
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/siyi/mock02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/siyi/mock03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+ });
 $(".work-yipin").click(function(){
     $('.popup-title').html("壹品酒業CIS設計");
         var Img1 = document.createElement("img");		//创建一个img元素
