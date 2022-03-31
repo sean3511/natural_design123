@@ -3,7 +3,88 @@ var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
 
+$(".work-rags").click(function(){
+    $('.title_blocker').hide();
+    $('.linkcon').css('display','block'); 
+   $('.worklink').attr('href','https://rags-tw.com/');
+    $('.popup-title').html("rags網頁設計");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/rags/pic01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
 
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/rags/pic02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/rags/pic03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/rags/pic04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+ });
+$(".work-chine_air").click(function(){
+        $('.popup-title').html("華航EDM設計");
+        $('.title_blocker').hide();
+        $('.linkcon').css('display','block'); 
+        $('.worklink').attr('href','https://chinaair.glitch.me/');
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/china_airplane/pic01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/china_airplane/pic02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/china_airplane/pic03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/china_airplane/pic04.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+        
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/china_airplane/pic05.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+ });
+$(".work-myboom-cms").click(function(){
+    $('.popup-title').html("Myboom管理後台");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/myboom_cms/pic01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/myboom_cms/pic02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/myboom_cms/pic03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/myboom_cms/pic04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+        
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/myboom_cms/pic05.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+ });
 $(".work-myboom").click(function(){
     $('.popup-title').html("Myboom");
         var Img1 = document.createElement("img");		//创建一个img元素
@@ -448,6 +529,7 @@ $(".closer").click(function(){
     //關閉YT按鈕開啟30px的blocker
     $('.title_blocker').show();
     $('.ytcon').css('display','none'); 
+    $('.linkcon').css('display','none'); 
     //讓header透明
     $('.page-header-bg').removeClass('header-bg-visable');
     $('.page-header-bg').css("z-index","9999")
