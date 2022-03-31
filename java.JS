@@ -526,6 +526,11 @@ $(".tile").click(function(){
      }
   });
 $(".closer").click(function(){
+    var child = Img_container.lastElementChild;  
+    while (child) { 
+        Img_container.removeChild(child); 
+        child = Img_container.lastElementChild; 
+    } 
     //關閉YT按鈕開啟30px的blocker
     $('.title_blocker').show();
     $('.ytcon').css('display','none'); 
@@ -541,13 +546,6 @@ $(".closer").click(function(){
      {
      overlay.style.display="none";
     }
-
-     var child = Img_container.lastElementChild;  
-     while (child) { 
-         Img_container.removeChild(child); 
-         child = Img_container.lastElementChild; 
-     } 
-
      if(screen.width < 770){
         $('#full_pop').removeClass("slider");
         setTimeout(() => { overlay.style.display="none"; }, 500);
