@@ -5,7 +5,7 @@ var Img_container = document.getElementsByClassName("popup-photo-container")[0];
 
 $(".work-rags").click(function(){
     $('.title_blocker').hide();
-    $('.linkcon').css('display','block'); 
+    $('.linkicon').css('display','block'); 
    $('.worklink').attr('href','https://rags-tw.com/');
     $('.popup-title').html("rags網頁設計");
         var Img1 = document.createElement("img");		//创建一个img元素
@@ -31,7 +31,7 @@ $(".work-rags").click(function(){
 $(".work-chine_air").click(function(){
         $('.popup-title').html("華航EDM設計");
         $('.title_blocker').hide();
-        $('.linkcon').css('display','block'); 
+        $('.linkicon').css('display','block'); 
         $('.worklink').attr('href','https://chinaair.glitch.me/');
         var Img1 = document.createElement("img");		//创建一个img元素
         addClass(Img1, 'popup-img');
@@ -533,8 +533,8 @@ $(".closer").click(function(){
     } 
     //關閉YT按鈕開啟30px的blocker
     $('.title_blocker').show();
+    $('.linkicon').css('display','none'); 
     $('.ytcon').css('display','none'); 
-    $('.linkcon').css('display','none'); 
     //讓header透明
     $('.page-header-bg').removeClass('header-bg-visable');
     $('.page-header-bg').css("z-index","9999")
@@ -556,6 +556,7 @@ window.onclick = function(event){
         //關閉YT按鈕開啟30px的blocker
         $('.title_blocker').show();
         $('.ytcon').css('display','none'); 
+        $('.linkicon').css('display','none'); 
         //讓header透明
         $('.page-header-bg').removeClass('header-bg-visable');
         $('.page-header-bg').css("z-index","9999");
