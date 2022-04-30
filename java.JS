@@ -3,6 +3,60 @@ var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
 
+$(".house_sell_dm").click(function(){
+    $('.popup-title').html("房仲形象DM");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/house_sell_dm/mock01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/house_sell_dm/mock02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/house_sell_dm/mock03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/house_sell_dm/mock04.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/house_sell_dm/mock05.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+
+        var Img6 = document.createElement("img");		//创建一个img元素
+        addClass(Img6, 'popup-img');
+		Img6.src="/image/portfolio/house_sell_dm/mock06.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img6);  	//为dom添加子元素img
+ });
+$(".KPMAX").click(function(){
+    $('.popup-title').html("KPMAX遊戲UI");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/KPMAX/mock01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/KPMAX/mock02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/KPMAX/mock03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/KPMAX/mock04.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+ });
 $(".work-rags").click(function(){
     $('.title_blocker').hide();
     $('.linkicon').css('display','block'); 

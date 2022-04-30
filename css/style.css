@@ -780,6 +780,12 @@ input[type=radio] {
     background-image: url(/image/portfolio/rags/pic01.jpg);
     background-position:center top;
   }
+  .KPMAX{
+    background-image: url(/image/portfolio/KPMAX/mock01.jpg);
+  }
+  .house_sell_dm{
+    background-image: url(/image/portfolio/house_sell_dm/mock01.jpg);
+  }
   .green {
     /* background: rgba(52, 150, 220, 0.44); */
   }
