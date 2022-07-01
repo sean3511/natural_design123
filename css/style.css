@@ -783,6 +783,13 @@ input[type=radio] {
   .KPMAX{
     background-image: url(/image/portfolio/KPMAX/mock01.jpg);
   }
+  .diet_app{
+    background-image: url(/image/portfolio/diet_app/mock02.jpg);
+  }
+  .skyup{
+    background-image: url(/image/portfolio//skyup/mock02.jpg);
+    background-position:center top;
+  }
   .house_sell_dm{
     background-image: url(/image/portfolio/house_sell_dm/mock01.jpg);
   }
