@@ -2,6 +2,93 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+$(".soccermining").click(function(){
+    $('.popup-title').html("絢居酒屋專案");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/scooermining/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/scooermining/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/scooermining/mock03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/scooermining/mock04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+ });
+$(".xuan").click(function(){
+    $('.popup-title').html("絢居酒屋專案");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/xuan/mock01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/xuan/mock02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/xuan/mock03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/xuan/mock04.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+ });
+$(".W-Emetaverse").click(function(){
+    $('.popup-title').html("W&E元宇宙");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/W&Emetaverse/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/W&Emetaverse/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/W&Emetaverse/mock03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/W&Emetaverse/mock04.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/W&Emetaverse/mock05.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+
+        var Img6 = document.createElement("img");		//创建一个img元素
+        addClass(Img6, 'popup-img');
+		Img6.src="/image/portfolio/W&Emetaverse/mock06.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img6);  	//为dom添加子元素img
+
+        var Img7 = document.createElement("img");		//创建一个img元素
+        addClass(Img7, 'popup-img');
+		Img7.src="/image/portfolio/W&Emetaverse/mock07.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img7);  	//为dom添加子元素img
+
+        var Img8 = document.createElement("img");		//创建一个img元素
+        addClass(Img8, 'popup-img');
+		Img8.src="/image/portfolio/W&Emetaverse/mock08.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img8);  	//为dom添加子元素img
+
+ });
 $(".diet_app").click(function(){
     $('.popup-title').html("skyup社群圖");
         var Img1 = document.createElement("img");		//创建一个img元素
