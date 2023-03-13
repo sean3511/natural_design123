@@ -2,8 +2,89 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
+$(".mrh_web").click(function(){
+    $('.title_blocker').hide();
+    $('.linkicon').css('display','block'); 
+    $('.worklink').attr('href','https://mrh-beauty.glitch.me/');
+    $('.popup-title').html("mrh_web");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/mrh_web/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/mrh_web/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/mrh_web/mock03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+ });
+$(".ins_keeper").click(function(){
+    $('.popup-title').html("保險管家UI");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/ins_keeper/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/ins_keeper/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/ins_keeper/mock03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+
+        var Img4 = document.createElement("img");		//创建一个img元素
+        addClass(Img4, 'popup-img');
+		Img4.src="/image/portfolio/ins_keeper/mock04.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img4);  	//为dom添加子元素img
+
+        var Img5 = document.createElement("img");		//创建一个img元素
+        addClass(Img5, 'popup-img');
+		Img5.src="/image/portfolio/ins_keeper/mock05.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img5);  	//为dom添加子元素img
+ });
+$(".ironfather").click(function(){
+    $('.popup-title').html("鐵爸團隊LOGO");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/ironfather_logo/mock01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/ironfather_logo/mock02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/ironfather_logo/mock03.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+ });
+$(".metaverse-scratchup").click(function(){
+    $('.popup-title').html("ETH刮刮樂");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/metaverse_scratchup/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/metaverse_scratchup/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/metaverse_scratchup/mock03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+ });
 $(".soccermining").click(function(){
-    $('.popup-title').html("絢居酒屋專案");
+    $('.popup-title').html("足球挖礦專案");
         var Img1 = document.createElement("img");		//创建一个img元素
         addClass(Img1, 'popup-img');
 		Img1.src="/image/portfolio/scooermining/mock01.png";   //给img元素的src属性赋值
@@ -90,7 +171,7 @@ $(".W-Emetaverse").click(function(){
 
  });
 $(".diet_app").click(function(){
-    $('.popup-title').html("skyup社群圖");
+    $('.popup-title').html("斷食APP");
         var Img1 = document.createElement("img");		//创建一个img元素
         addClass(Img1, 'popup-img');
 		Img1.src="/image/portfolio/diet_app/mock01.jpg";   //给img元素的src属性赋值
@@ -686,23 +767,6 @@ $(".work-sofa-app").click(function(){
         addClass(work_sofa_Img3, 'popup-img');
 		work_sofa_Img3.src="/image/portfolio/sofa_app/shop03.png";   //给img元素的src属性赋值
 		Img_container.appendChild(work_sofa_Img3);  	//为dom添加子元素img
- });
- $(".work-shu-app").click(function(){
-    $('.popup-title').html("世新大學APP設計");
-    var work_shu_Img1 = document.createElement("img");		//创建一个img元素
-        addClass(work_shu_Img1, 'popup-img');
-		work_shu_Img1.src="/image/portfolio/shu_app/shu_app01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(work_shu_Img1);  	//为dom添加子元素img
-
-        var work_shu_Img2 = document.createElement("img");		//创建一个img元素
-        addClass(work_shu_Img2, 'popup-img');
-		work_shu_Img2.src="/image/portfolio/shu_app/shu_app02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(work_shu_Img2);  	//为dom添加子元素img
-
-        var work_shu_Img3 = document.createElement("img");		//创建一个img元素
-        addClass(work_shu_Img3, 'popup-img');
-		work_shu_Img3.src="/image/portfolio/shu_app/shu_app03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(work_shu_Img3);  	//为dom添加子元素img
  });
 $(".tile").click(function(){
     //讓header透明
