@@ -22,4 +22,5 @@ jobs:
             with:
               path: ${{ github.workspace }}
               destination: 'bucket-name/file'
+              credentials: ${{ secrets.GCP_CREDENTIALS }}
               
