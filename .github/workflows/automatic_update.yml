@@ -1,24 +1,19 @@
+name: Build and Deploy to Google Cloud Storage
+ 
+on:
+  push:
+    branches:
+    - main
 jobs:
-  job_id:
-    permissions:
-      contents: 'read'
-      id-token: 'write'
-
-    steps:
-    - id: 'auth'
-      uses: 'google-github-actions/auth@v1'
-      with:
-        workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-        service_account: 'my-service-account@my-project.iam.gserviceaccount.com'
-
-    - id: 'upload-file'
-      uses: 'google-github-actions/upload-cloud-storage@v1'
-      with:
-        path: '/path/to/file'
-        destination: 'natural-design.work'
-
-    # Example of using the output
-    - id: 'uploaded-files'
-      uses: 'foo/bar@main'
-      env:
-        file: '${{ steps.upload-file.outputs.uploaded }}'
+  job:
+    runs-on: ubuntu-latest
+steps:
+      - uses: actions/checkout@v2
+      - name: Check out repository
+        run: ls -lah $GITHUB_WORKSPACE
+      - name: Upload google-cloud-storage
+        uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+        with:
+          path: ${{ github.workspace }}
+          destination: pycon2021
+          credentials: ${{ secrets.GCP_CREDENTIALS }}
