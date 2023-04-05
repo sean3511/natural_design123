@@ -23,6 +23,7 @@ body{
  font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif;
  line-height: 1,7;
  background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%);
+ background: white;
  background-repeat:no-repeat;
  /* background:rgba(0,41,77,1) */
  /* overflow: hidden; */
