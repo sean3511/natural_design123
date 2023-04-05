@@ -196,32 +196,32 @@ $(".skyup").click(function(){
     $('.popup-title').html("skyup社群圖");
         var Img1 = document.createElement("img");		//创建一个img元素
         addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio//skyup/mock01.jpg";   //给img元素的src属性赋值
+		Img1.src="/image/portfolio/skyup/mock01.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img1);  	//为dom添加子元素img
 
         var Img2 = document.createElement("img");		//创建一个img元素
         addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio//skyup/mock02.jpg";   //给img元素的src属性赋值
+		Img2.src="/image/portfolio/skyup/mock02.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img2);  	//为dom添加子元素img
 
         var Img3 = document.createElement("img");		//创建一个img元素
         addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio//skyup/mock03.jpg";   //给img元素的src属性赋值
+		Img3.src="/image/portfolio/skyup/mock03.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img3);  	//为dom添加子元素img
 
         var Img4 = document.createElement("img");		//创建一个img元素
         addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio//skyup/mock04.jpg";   //给img元素的src属性赋值
+		Img4.src="/image/portfolio/skyup/mock04.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img4);  	//为dom添加子元素img
 
         var Img5 = document.createElement("img");		//创建一个img元素
         addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio//skyup/mock05.jpg";   //给img元素的src属性赋值
+		Img5.src="/image/portfolio/skyup/mock05.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img5);  	//为dom添加子元素img
 
         var Img6 = document.createElement("img");		//创建一个img元素
         addClass(Img6, 'popup-img');
-		Img6.src="/image/portfolio//skyup/mock06.jpg";   //给img元素的src属性赋值
+		Img6.src="/image/portfolio/skyup/mock06.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img6);  	//为dom添加子元素img
  });
 $(".house_sell_dm").click(function(){
