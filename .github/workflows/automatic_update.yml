@@ -8,10 +8,11 @@ jobs:
   job:
     runs-on: ubuntu-latest
   steps:
-    - name: Checkout
-      uses: actions/checkout@v3
+    - name: Check out repository
+    - uses: actions/checkout@v3
+    run: ls -lah $GITHUB_WORKSPACE
     - name: Setup - gcloud / gsutil
-      uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
         service_account_key: ${{ secrets.GCS_SA_KEY }}
         project_id: ${{ secrets.GCS_PROJECT }}
