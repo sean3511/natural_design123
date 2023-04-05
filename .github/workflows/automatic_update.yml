@@ -8,8 +8,8 @@ jobs:
   job:
     runs-on: ubuntu-latest
   steps:
-      - uses: actions/checkout@v2
       - name: Check out repository
+      - uses: actions/checkout@v2
         run: ls -lah $GITHUB_WORKSPACE
       - name: Upload google-cloud-storage
         uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
