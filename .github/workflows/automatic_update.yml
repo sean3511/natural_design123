@@ -8,15 +8,15 @@ jobs:
   job:
     runs-on: ubuntu-latest
   steps:
-    - name: Check out repository
-    - uses: actions/checkout@v3
-    run: ls -lah $GITHUB_WORKSPACE
-    - name: Setup - gcloud / gsutil
-    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
-      with:
-        service_account_key: ${{ secrets.GCS_SA_KEY }}
-        project_id: ${{ secrets.GCS_PROJECT }}
-        export_default_credentials: true
-    - name: Deploy
-    run: |-
-      gsutil -m rsync -R output gs://$GCS_BUCKET
+        - name: Check out repository
+        - uses: actions/checkout@v3
+        run: ls -lah $GITHUB_WORKSPACE
+        - name: Setup - gcloud / gsutil
+        - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+          with:
+            service_account_key: ${{ secrets.GCS_SA_KEY }}
+            project_id: ${{ secrets.GCS_PROJECT }}
+            export_default_credentials: true
+        - name: Deploy
+        run: |-
+          gsutil -m rsync -R output gs://$GCS_BUCKET
