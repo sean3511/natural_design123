@@ -12,7 +12,7 @@ jobs:
           - name: Check out repository
             run: ls -lah $GITHUB_WORKSPACE
           - name: Upload google-cloud-storage
-            uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+            uses: google-github-actions/setup-gcloud@v0
             with:
               path: ${{ github.workspace }}
               destination: natural-design.work
