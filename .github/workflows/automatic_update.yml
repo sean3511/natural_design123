@@ -16,4 +16,6 @@ jobs:
             with:
               path: ${{ github.workspace }}
               destination: 'natural-design.work'
+              credentials: ${{ secrets.GCP_CREDENTIALS }}
               parent: false
+              
