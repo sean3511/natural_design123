@@ -12,7 +12,7 @@ jobs:
           - name: Check out repository
             run: ls -lah $GITHUB_WORKSPACE
           - id: upload-files
-            uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+            uses: google-github-actions/setup-gcloud@v0
             with:
               path: /path/to/folder
               destination: natural-deisgn.work
