@@ -15,7 +15,7 @@ jobs:
       uses: 'google-github-actions/upload-cloud-storage@v1'
       with:
         path: '/path/to/folder'
-        destination: 'bucket-name'
+        destination: 'natural-design.work'
 
     # Example of using the output
     - id: 'uploaded-files'
