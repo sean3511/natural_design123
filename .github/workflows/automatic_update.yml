@@ -14,8 +14,6 @@ jobs:
           - id: upload-files
             uses: google-github-actions/setup-gcloud@v0
             with:
-              project_id: ${{ secrets.GCP_PROJECT_ID }}
-              service_account_key: ${{ secrets.GCP_ACCOUNT }}
-              credentials_file_path: ${{ env.RUNNER_TEMP }}
-              export_default_credentials: true
-              version: "318.0.0"
+              version: '318.0.0'
+              service_account_email: ${{ secrets.SECRET_NAME }}
+              service_account_key: ${{ secrets.SECRET_NAME }}
