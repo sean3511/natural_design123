@@ -7,13 +7,13 @@ on:
 jobs:
   job:
     runs-on: ubuntu-latest
-    steps:
-          - uses: actions/checkout@v3
-          - name: Check out repository
-            run: ls -lah $GITHUB_WORKSPACE
-          - id: upload-files
-            uses: google-github-actions/setup-gcloud@v0
-            with:
-              version: '318.0.0'
-              service_account_email: ${{ secrets.SECRET_NAME }}
-              service_account_key: ${{ secrets.SECRET_NAME }}
+  steps:
+      - uses: actions/checkout@v2
+      - name: Check out repository
+        run: ls -lah $GITHUB_WORKSPACE
+      - name: Upload google-cloud-storage
+        uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+        with:
+          path: ${{ github.workspace }}
+          destination: natural-design.work
+          credentials: ${{ secrets.GCP_CREDENTIALS }}
