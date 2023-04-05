@@ -9,8 +9,8 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps:
-          - name: Check out repository
           - uses: actions/checkout@v3
+          - name: Check out repository
           run: ls -lah $GITHUB_WORKSPACE
           - name: Setup - gcloud / gsutil
           - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
