@@ -68,7 +68,7 @@ img{
   max-width: 50px;
   max-height: 50px;
   filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(144deg) brightness(95%) contrast(107%);
-  content: url('/image/cross.svg');
+  content: url('../image/cross.svg');
 }
 
 .mobile-nav{
@@ -471,67 +471,67 @@ position: relative;
   filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(144deg) brightness(95%) contrast(107%);
 }
 .tool-logo:nth-child(1){
-  background-image: url(/image/tool_logo/ps.svg);
+  background-image: url(../image/tool_logo/ps.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(2){
-  background-image: url(/image/tool_logo/ai.svg);
+  background-image: url(../image/tool_logo/ai.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(3){
-  background-image: url(/image/tool_logo/pr.svg);
+  background-image: url(../image/tool_logo/pr.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(4){
-  background-image: url(/image/tool_logo/Xd.svg);
+  background-image: url(../image/tool_logo/Xd.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(5){
-  background-image: url(/image/tool_logo/3Dmax.svg);
+  background-image: url(../image/tool_logo/3Dmax.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(6){
-  background-image: url(/image/tool_logo/zbrush.svg);
+  background-image: url(../image/tool_logo/zbrush.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(7){
-  background-image: url(/image/tool_logo/drangonbone.svg);
+  background-image: url(../image/tool_logo/drangonbone.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(8){
-  background-image: url(/image/tool_logo/substancepainter.svg);
+  background-image: url(../image/tool_logo/substancepainter.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(9){
-  background-image: url(/image/tool_logo/unity.svg);
+  background-image: url(../image/tool_logo/unity.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(10){
-  background-image: url(/image/tool_logo/figma.svg);
+  background-image: url(../image/tool_logo/figma.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
 }
 .tool-logo:nth-child(11){
-  background-image: url(/image/tool_logo/blender.svg);
+  background-image: url(../image/tool_logo/blender.svg);
   margin-right: 20px;
   margin-bottom: 20px;
   /* fill: white; */
@@ -685,7 +685,7 @@ input[type=radio] {
     border-radius: .5em;
     transition: all .15s;
     /* 背景底圖 */
-    /* background:  url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop='); */
+    /* background:  url('https:/../images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop='); */
     background-size: cover;
     background-position: center;
     /* 背景底圖 */
@@ -711,123 +711,126 @@ input[type=radio] {
       opacity: 0;
   }
  /* .tile:nth-of-type(3n) {
-    background-image: url('/image/portfolio/game_UI/gameUI_01.png');
+    background-image: url('../image/portfolio/game_UI/gameUI_01.png');
   }
   .tile:nth-of-type(4n) {
-    background-image: url(/image/portfolio/stack/mock_01.jpg);
+    background-image: url(../image/portfolio/stack/mock_01.jpg);
   }
   
   .tile:nth-of-type(5n) {
-    background-image: url(/image/portfolio/dragon_girl/mock_01.jpg);
+    background-image: url(../image/portfolio/dragon_girl/mock_01.jpg);
   }
   
   .tile:nth-of-type(6n) {
-    background-image: url(/image/portfolio/pileup/mock_01.png);
+    background-image: url(../image/portfolio/pileup/mock_01.png);
   } */
   #player,#player2{
     display: none;
   }
   .work-sofa-app{
-    background-image: url(/image/portfolio/sofa_app/shop01.png);
+    background-image: url(../image/portfolio/sofa_app/shop01.png);
   }
   .work-shu-app{
-    background-image: url(/image/portfolio/shu_app/shu_app01.png);
+    background-image: url(../image/portfolio/shu_app/shu_app01.png);
   }
   .work-game-ui{
-    background-image: url(/image/portfolio/game_UI/gameUI_01.png);
+    background-image: url(../image/portfolio/game_UI/gameUI_01.png);
   }
   .work-stack{
-    background-image: url(/image/portfolio/stack/mock_01.jpg);
+    background-image: url(../image/portfolio/stack/mock_01.jpg);
     background-position:center bottom;
   }
   .work-dragon-girl{
-    background-image: url(/image/portfolio/dragon_girl/mock_01.jpg);
+    background-image: url(../image/portfolio/dragon_girl/mock_01.jpg);
     background-position:center top;
   }
   .work-pile-up{
-    background-image: url(/image/portfolio/pileup/mock_02.png);
+    background-image: url(../image/portfolio/pileup/mock_02.png);
   }
   .work-TAG{
-    background-image: url(/image/portfolio/tag/mock_01.jpg);
-    /* background-image: url(/image/portfolio/tag/mock_02.png); */
+    background-image: url(../image/portfolio/tag/mock_01.jpg);
+    /* background-image: url(../image/portfolio/tag/mock_02.png); */
     /* background-position:center 72%; */
   }
   .work-the-last-trace{
-    background-image: url(/image/portfolio/the_last_trace/mock_01.png);
+    background-image: url(../image/portfolio/the_last_trace/mock_01.png);
      background-position:center bottom;
   }
   .work-scifi{
-    background-image: url(/image/portfolio/scifi/mock01.png);
-    /* background-image: url(/image/portfolio/tag/mock_02.png); */
+    background-image: url(../image/portfolio/scifi/mock01.png);
+    /* background-image: url(../image/portfolio/tag/mock_02.png); */
     /* background-position:center 72%; */
   }
   .work-alcholAd{
-    background-image: url(/image/portfolio/alcohol_media/mock01.png)
+    background-image: url(../image/portfolio/alcohol_media/mock01.png)
   }
   .work-Ggod{
-    background-image: url(/image/portfolio/girl_god/mock01.png);
+    background-image: url(../image/portfolio/girl_god/mock01.png);
     background-position:center bottom;
   }
   .work-yipin{
-    background-image: url(/image/portfolio/yipin/mock01.jpg);
+    background-image: url(../image/portfolio/yipin/mock01.jpg);
     background-position:center top;
   }
   .work-siyi{
-    background-image: url(/image/portfolio/siyi/mock01.jpg);
+    background-image: url(../image/portfolio/siyi/mock01.jpg);
   }
   .work-cosmetic{
-    background-image: url(/image/portfolio/re_cosmetic/cosmetic_01.jpg);
+    background-image: url(../image/portfolio/re_cosmetic/cosmetic_01.jpg);
     background-position:center 90%;
   }
   .work-myboom{
-    background-image: url(/image/portfolio/myboom/myboom01.jpg);
+    background-image: url(../image/portfolio/myboom/myboom01.jpg);
     /* background-position:center 90%; */
   }
   .work-myboom-cms{
-    background-image: url(/image/portfolio/myboom_cms/pic03.png);
+    background-image: url(../image/portfolio/myboom_cms/pic03.png);
     background-position:center top;
   }
   .work-chine_air{
-    background-image: url(/image/portfolio/china_airplane/pic01.jpg);
+    background-image: url(../image/portfolio/china_airplane/pic01.jpg);
     background-position:center top;
   }
   .work-rags{
-    background-image: url(/image/portfolio/rags/pic01.jpg);
+    background-image: url(../image/portfolio/rags/pic01.jpg);
     background-position:center top;
   }
   .soccermining{
-    background-image: url(/image/portfolio/scooermining/mock01.png);
+    background-image: url(../image/portfolio/scooermining/mock01.png);
   }
   .ins_keeper{
-    background-image: url(/image/portfolio/ins_keeper/mock01.png);
+    background-image: url(../image/portfolio/ins_keeper/mock01.png);
   }
   .ironfather{
-    background-image: url(/image/portfolio/ironfather_logo/mock01.jpg);
+    background-image: url(../image/portfolio/ironfather_logo/mock01.jpg);
   }
   .xuan{
-    background-image: url(/image/portfolio/xuan/mock01.jpg);
+    background-image: url(../image/portfolio/xuan/mock01.jpg);
   }
   .mrh_web{
-    background-image: url(/image/portfolio/mrh_web/mock01.png);
+    background-image: url(../image/portfolio/mrh_web/mock01.png);
+  }
+  .aidogelon_web{
+    background-image: url(../image/portfolio/aidogelon/mock01.jpg);
   }
   .W-Emetaverse{
-    background-image: url(/image/portfolio/W&Emetaverse/mock01.png);
+    background-image: url(../image/portfolio/W&Emetaverse/mock01.png);
   }
   .metaverse-scratchup{
-    background-image: url(/image/portfolio/metaverse_scratchup/mock01.png);
+    background-image: url(../image/portfolio/metaverse_scratchup/mock01.png);
   }
   .KPMAX{
-    background-image: url(/image/portfolio/KPMAX/mock01.jpg);
+    background-image: url(../image/portfolio/KPMAX/mock01.jpg);
   }
   .diet_app{
-    background-image: url(/image/portfolio/diet_app/mock02.jpg);
+    background-image: url(../image/portfolio/diet_app/mock02.jpg);
   }
   .skyup{
-    background-image: url(/image/portfolio/skyup/mock02.jpg);
+    background-image: url(../image/portfolio/skyup/mock02.jpg);
     background-position:center top;
   }
   .house_sell_dm{
-    background-image: url(/image/portfolio/house_sell_dm/mock01.jpg);
+    background-image: url(../image/portfolio/house_sell_dm/mock01.jpg);
   }
   .portfolio-title{
     /* position: relative; */
@@ -938,26 +941,26 @@ h5{
   border-radius: .5em;
   transition: all .15s;
   /* 背景底圖 */
-  background:  url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+  background:  url('https:/../images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
   background-size: cover;
   background-position: center;
   /* 背景底圖 */
   box-shadow: 0px 3px 20px 2px rgba(0, 0, 0, 0.329);
 }
 .popup-photo:nth-of-type(3n) {
-    background-image: url('https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=');
+    background-image: url('https:/../images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=');
   }
   
   .popup-photo:nth-of-type(4n) {
-    background-image: url('https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=');
+    background-image: url('https:/../images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=');
   }
   
   .popup-photo:nth-of-type(5n) {
-    background-image: url('https://images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+    background-image: url('https:/../images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
   }
   
   .popup-photo:nth-of-type(6n) {
-    background-image: url('https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+    background-image: url('https:/../images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
   }
 .popup-header{
   padding: 0 4%;
@@ -1304,7 +1307,7 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
     .close-svg{
     height: 30px;
     width: 30px;
-    content: url(/image/back.svg);
+    content: url(../image/back.svg);
   }
   label {
     font-size: 12px;;
