@@ -988,7 +988,7 @@ function sendMail() {
                 To: 'natural.design.sean@gmail.com',
                 // From: String(fields.mail),
                 From: 'natural.design.sean@gmail.com',
-                Subject: "信件成功測試",
+                Subject: "換標題測試",
                 Body: body,
             })
             .then(
