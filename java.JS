@@ -147,6 +147,35 @@ $(".xuan").click(function(){
 		Img4.src="/image/portfolio/xuan/mock04.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img4);  	//为dom添加子元素img
  });
+ $(".hong").click(function(){
+    $('.popup-title').html("弘居酒屋專案");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/hong/mock01.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/hong/mock02.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+
+        var Img3 = document.createElement("img");		//创建一个img元素
+        addClass(Img3, 'popup-img');
+		Img3.src="/image/portfolio/hong/mock03.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img3);  	//为dom添加子元素img
+ });
+ $(".ahong-saussage").click(function(){
+    $('.popup-title').html("香腸團購DM");
+        var Img1 = document.createElement("img");		//创建一个img元素
+        addClass(Img1, 'popup-img');
+		Img1.src="/image/portfolio/ahong-saussage/mock01.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img1);  	//为dom添加子元素img
+
+        var Img2 = document.createElement("img");		//创建一个img元素
+        addClass(Img2, 'popup-img');
+		Img2.src="/image/portfolio/ahong-saussage/mock02.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img2);  	//为dom添加子元素img
+ });
 $(".W-Emetaverse").click(function(){
     $('.popup-title').html("W&E元宇宙");
         var Img1 = document.createElement("img");		//创建一个img元素
@@ -490,6 +519,21 @@ $(".work-yipin").click(function(){
         addClass(Img6, 'popup-img');
 		Img6.src="/image/portfolio/yipin/mock06.jpg";   //给img元素的src属性赋值
 		Img_container.appendChild(Img6);  	//为dom添加子元素img
+
+        var Img7 = document.createElement("img");		//创建一个img元素
+        addClass(Img7, 'popup-img');
+		Img7.src="/image/portfolio/yipin/mock07.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img7);  	//为dom添加子元素img
+
+        var Img8 = document.createElement("img");		//创建一个img元素
+        addClass(Img8, 'popup-img');
+		Img8.src="/image/portfolio/yipin/mock08.jpg";   //给img元素的src属性赋值
+		Img_container.appendChild(Img8);  	//为dom添加子元素img
+
+        var Img9 = document.createElement("img");		//创建一个img元素
+        addClass(Img9, 'popup-img');
+		Img9.src="/image/portfolio/yipin/mock09.png";   //给img元素的src属性赋值
+		Img_container.appendChild(Img9);  	//为dom添加子元素img
  });
 $(".work-alcholAd").click(function(){
     $('.popup-title').html("酒類社群圖文");

@@ -807,6 +807,12 @@ input[type=radio] {
   .xuan{
     background-image: url(../image/portfolio/xuan/mock01.jpg);
   }
+  .hong{
+    background-image: url(../image/portfolio/hong/mock02.png);
+  }
+  .ahong-saussage{
+    background-image: url(../image/portfolio/ahong-saussage/mock01.jpg);
+  }
   .mrh_web{
     background-image: url(../image/portfolio/mrh_web/mock01.png);
   }
