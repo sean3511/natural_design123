@@ -16,9 +16,11 @@ canvas {
   
 }
 form{
+margin-top: 20px;
 width: 100%;
 display: flex;
 flex-direction: column;
+gap: 20px;
 justify-content: center;
 align-items: flex-start;
 }
@@ -115,8 +117,8 @@ img{
   border: 2px solid white;
 }
 .mobile-nav a:hover{
-  border: 2px solid orange;
-  color:orange;
+  border: 2px solid C49C2B;
+  color:C49C2B;
 }
 .main-nav{
     /* margin-left: -40px; */
@@ -133,7 +135,7 @@ img{
     color: white;
 }
 .main-nav a:hover{
-    color:orange;
+    color:C49C2B;
 }
 .header-block{
   min-height: 15vh;
@@ -271,6 +273,8 @@ h2{
   border-radius: 16px;
   background: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
   box-shadow: 0px 4px 28.2px 0px rgba(255, 255, 255, 0.25) inset, 0px 16px 28.9px 0px rgba(238, 201, 92, 0.25);
+  font-size: 20px;
+  font-weight: 500;
 }
 .main_btn >*{
   font-size: 20px;
@@ -359,7 +363,7 @@ position: relative;
   bottom: -10px;
   height: 45px;
   width: 25vmin;
-      background-color: orange
+      background-color: C49C2B
   }
 .about-Content{
   margin-top: 160px;
@@ -607,7 +611,7 @@ height: 20px;
 width: 100px;
 margin-bottom: -0px;
 margin-right: -5px;
-    background-color: orange
+    background-image: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
 }
 .samll_title{
     display: inline;
@@ -666,7 +670,7 @@ input[type=radio] {
   }
   
   input[type=radio]:checked+label { 
-    border-color: orange;
+    border-color: #C49C2B;
     color: white;
     /* box-sizing: border-box; */
   }
@@ -1191,7 +1195,6 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   padding: 12px;
   width:80%;
   margin-right: 20px;
-  margin-top:20px;
   border-radius: 8px;
   transition: all .2s;
   color: white;
@@ -1297,6 +1300,8 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   border-radius: 50%;
   color: #fff;
   background-color:  rgba(0,41,77,1);
+  background: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
+  box-shadow: 0px 4px 28.2px 0px rgba(255, 255, 255, 0.25) inset, 0px 16px 28.9px 0px rgba(238, 201, 92, 0.25);
   cursor: pointer; 
   transition: all .2s ease-in-out;
 }
@@ -1425,7 +1430,6 @@ text-align: center;
 }
 .textarea{
   margin: auto 20px;
-  margin-top: 20px;
 }
 form{
   width: 100%;
