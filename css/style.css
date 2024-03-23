@@ -1,5 +1,8 @@
 @charset "UFT-8";
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
 html{
 font-size: 100%;
 }
@@ -20,13 +23,24 @@ justify-content: center;
 align-items: flex-start;
 }
 body{
- font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif;
- line-height: 1,7;
- background: radial-gradient(circle at 70% 120%, rgba(30,158,207,1) 0%, rgba(0,41,77,1) 70%);
+font-family: "Noto Sans TC", sans-serif; line-height: 1,7;
  /* background: red; */
  background-repeat:no-repeat;
  /* background:rgba(0,41,77,1) */
  /* overflow: hidden; */
+}
+
+.main-background{
+  position: fixed;
+  z-index: -1;
+  width: 100vw;  /* 视口的100%宽 */
+  height: 100vh; /* 视口的100%高 */
+  background: radial-gradient(88.24% 62.75% at -2.6% 3.1%, #19191B 0%, #232323 14.7%, #08090C 100%), #FFF;  padding: 0; /* 移除內邊距 */
+  background-position: center; /* 背景圖像居中顯示 */
+  background-repeat: no-repeat; /* 不重複背景圖像 */
+  background-size: cover; /* 背景圖像覆蓋整個可視區域 */
+  top: 0;
+  left: 0;
 }
 .index-bg{
 min-height: 100vh;
@@ -189,8 +203,10 @@ transition: all 0.3s;
   align-items: flex-end;
   justify-content: flex-end;
   flex-grow: 1;
+  max-width: 700px;
   /* background-color: brown; */
   position: relative;
+  filter: drop-shadow(0 -5vmin 10vw rgba(213, 187, 130, 0.3));
 }
 
 .img-island{
@@ -230,13 +246,11 @@ h1{
     display: block;
     /* width: 600px; */
     /* background-color: red; */
-    padding-left: 30px;
-    border-left: white solid 17px;
     text-shadow: 2px 2px 50px rgb(0, 7, 14);
     line-height: 120%;
     color: white;
     text-transform: uppercase;
-    font-size: 5.5rem;
+    font-size:72px;
     /* background-color: violet; */
 }
 h2{
@@ -247,15 +261,33 @@ h2{
     font-size: 3rem;
     /* background-color: violet; */
 }
-
+.main_btn{
+  display: inline-block;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  border-radius: 16px;
+  background: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
+  box-shadow: 0px 4px 28.2px 0px rgba(255, 255, 255, 0.25) inset, 0px 16px 28.9px 0px rgba(238, 201, 92, 0.25);
+}
+.main_btn >*{
+  font-size: 20px;
+  display: block;
+  font-weight: 500;
+}
 .flexer{
     display: flex;
     /* background-color: aquamarine */
 }
 .left-word-field{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     z-index: 2;
+    width: 25%;
     /* background-color: yellow; */
-    max-width: 25%;
     /* overflow:hidden */
 }
 .content-display{
@@ -292,10 +324,7 @@ h2{
   justify-content: space-between;
   /* background-color: aliceblue; */
 }
-.content-index span{
-  display: block;
-  margin-top: 40px;
-}
+
 .main-intro{
   position: relative;
   /* background-color: rgba(0, 255, 255, 0.418); */
@@ -540,6 +569,8 @@ span,p{
     font-size: 18px;
     /* border-top: white 1px solid; */
     color: white;
+    font-weight: 200;
+    line-height: 180%;
     /* display: inline-block; */
 }
 /* works css */
@@ -1302,6 +1333,9 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 
 
 @media(max-width: 1024px) {
+  .content-index{
+    flex-direction: column;
+  }
   .scroller-bar::-webkit-scrollbar
   {
     width: 4px;
@@ -1344,7 +1378,6 @@ h1{
   /* color: antiquewhite; */
   border-left:none;
   font-size: 14vmin;
-  margin-left: 3vw;
   /* margin-top: 5vmin; */
 }
 .main-intro h2{
@@ -1354,8 +1387,8 @@ h1{
 /* 處裡左邊文字訊息 */
 .left-word-field{
   z-index: 2;
-  background-color: yellow;
-  max-width: 0;
+  width: 100%;
+
 }
 .left-word-field span{
 display: none;
@@ -1584,7 +1617,6 @@ form{
   padding-left: 0px;
   border-left: none;
   font-size: 15vmin;
-  margin-left: 3vw;
   }
   .content-contact{
     /* margin-top:60pt; */
@@ -1608,6 +1640,5 @@ form{
   padding-left: 0px;
   border-left: none;
   font-size: 18vmin;
-  margin-left: 3vw;
   }
 }
