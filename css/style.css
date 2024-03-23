@@ -1302,9 +1302,8 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   line-height: 60px;
   border-radius: 50%;
   color: #fff;
-  background-color:  rgba(0,41,77,1);
-  background: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
-  box-shadow: 0px 4px 28.2px 0px rgba(255, 255, 255, 0.25) inset, 0px 16px 28.9px 0px rgba(238, 201, 92, 0.25);
+  background-color:  rgb(46, 46, 46);
+  box-shadow: 0px 8px 10.2px 0px rgba(255, 255, 255, 0.1) inset;
   cursor: pointer; 
   transition: all .2s ease-in-out;
 }
