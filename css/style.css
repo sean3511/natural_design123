@@ -37,7 +37,12 @@ font-family: "Noto Sans TC", sans-serif; line-height: 1,7;
   z-index: -1;
   width: 100vw;  /* 视口的100%宽 */
   height: 100vh; /* 视口的100%高 */
-  background: radial-gradient(88.24% 62.75% at -2.6% 3.1%, #19191B 0%, #232323 14.7%, #08090C 100%), #FFF;  padding: 0; /* 移除內邊距 */
+  /* background: radial-gradient(88.24% 62.75% at -2.6% 3.1%, #19191B 0%, #232323 14.7%, #08090C 100%), #FFF;   */
+  padding: 0; /* 移除內邊距 */
+  background: url(../image/bg.jpg)  50% / cover no-repeat, radial-gradient(88.24% 62.75% at -2.6% 3.1%, #19191B 0%, #232323 14.7%, #08090C 100%), #FFF;  
+  background-blend-mode: overlay, normal, normal;
+
+  
   background-position: center; /* 背景圖像居中顯示 */
   background-repeat: no-repeat; /* 不重複背景圖像 */
   background-size: cover; /* 背景圖像覆蓋整個可視區域 */
@@ -1344,6 +1349,9 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   display: none;
 }
 @media(max-width: 1024px) {
+  .main-background{
+    background: url(../image/bg_mb.jpg)  50% / cover no-repeat, radial-gradient(88.24% 62.75% at -2.6% 3.1%, #19191B 0%, #232323 14.7%, #08090C 100%), #FFF;  
+  }
   .PC_UI{
     display: none;
   }
