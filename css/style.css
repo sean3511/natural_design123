@@ -64,8 +64,8 @@ img{
 .logo{
     margin-top: 5%;
     /* background-color: blue; */
-    /* object-fit: cover; */
-    min-width: 130px;
+    /* object-fit: cover; */ 
+    width: 200px;
    max-height: 100%;
     /* height: 40%; */
 }
@@ -202,8 +202,8 @@ transition: all 0.3s;
 }
 .img-island-controller{
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   flex-grow: 1;
   max-width: 700px;
   /* background-color: brown; */
@@ -214,8 +214,6 @@ transition: all 0.3s;
 .img-island{
   max-width: 100%; 
   max-height: 100%; 
-  position: absolute; 
-  bottom: 0;
   /* background-color: beige; */
 }
 .img-contact-controller{
@@ -288,9 +286,10 @@ h2{
 .left-word-field{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 40px;
     z-index: 2;
-    width: 25%;
+    width: 30%;
     /* background-color: yellow; */
     /* overflow:hidden */
 }
@@ -598,7 +597,7 @@ span,p{
     z-index: 2;
     display: block;
     margin: 0 auto;
-    margin-top: -20px;
+    margin-top: -5px;
     max-width: 200px;
     /* background-color:aqua; */
 }
@@ -1338,6 +1337,13 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 
 
 @media(max-width: 1024px) {
+  .img-island{
+    max-width: 100%; 
+    max-height: 100%; 
+    position: absolute; 
+    bottom: 0;
+    /* background-color: beige; */
+  }
   .content-index{
     flex-direction: column;
   }
