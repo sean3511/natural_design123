@@ -270,7 +270,7 @@ h2{
   color: white;
   border-radius: 16px;
   background: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
-  box-shadow: 0px 4px 28.2px 0px rgba(255, 255, 255, 0.25) inset, 0px 16px 28.9px 0px rgba(238, 201, 92, 0.25);
+  box-shadow: 0px 4px 28.2px 0px rgba(255, 255, 255, 0.25) inset, 0px 16px 28.9px 0px rgba(196, 161, 24, 0.5);
   font-size: 20px;
   font-weight: 500;
 }
@@ -1334,9 +1334,19 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 .social-media-list li:hover a {
   color: #000;
 }
-
-
+.PC_UI{
+  display: block;
+}
+.MB_UI{
+  display: none;
+}
 @media(max-width: 1024px) {
+  .PC_UI{
+    display: none;
+  }
+  .MB_UI{
+    display: block;
+  }
   .img-island{
     max-width: 100%; 
     max-height: 100%; 
@@ -1345,6 +1355,7 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
     /* background-color: beige; */
   }
   .content-index{
+    gap: 120px;
     flex-direction: column;
   }
   .scroller-bar::-webkit-scrollbar
@@ -1399,7 +1410,7 @@ h1{
 .left-word-field{
   z-index: 2;
   width: 100%;
-
+  align-items: center;
 }
 .left-word-field span{
 display: none;
@@ -1508,6 +1519,9 @@ form{
 }
 
 @media(max-width: 770px) {
+  .img-island{
+    background-image: url();
+  }
   .title_blocker{
     display: block;
     min-width: 30px;
