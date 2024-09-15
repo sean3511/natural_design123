@@ -5,25 +5,32 @@ import sys
 def generate_json_from_directory(directory):
     result = []
     
+    # 遍歷主資料夾底下的資料夾
     for folder_name in os.listdir(directory):
         folder_path = os.path.join(directory, folder_name)
         
         if os.path.isdir(folder_path):
-            images = [f for f in os.listdir(folder_path) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))]
-            if images:
-                title = folder_name
-                image = ','.join(images)
-                thumbnail = images[0]  # 默認第一張圖作為縮圖
-
-                # 根據資料夾名稱的第一個字母來判斷類型 (type)
-                folder_type = folder_name.split('-')[0]  # 取資料夾名稱的第一部分作為 type
-
-                result.append({
-                    "title": title,
-                    "image": image,
-                    "thumbnail": thumbnail,
-                    "type": folder_type  # 新增 type 欄位
-                })
+            # 遍歷每個主資料夾下的第一層子資料夾
+            for sub_folder_name in os.listdir(folder_path):
+                sub_folder_path = os.path.join(folder_path, sub_folder_name)
+                
+                if os.path.isdir(sub_folder_path):
+                    # 將子資料夾名稱作為 type 欄位
+                    folder_type = sub_folder_name
+                    
+                    # 查找子資料夾中的圖片文件
+                    images = [f for f in os.listdir(sub_folder_path) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))]
+                    if images:
+                        title = folder_name  # 主資料夾名稱作為 title
+                        image = ','.join(images)
+                        thumbnail = images[0]  # 默認第一張圖作為縮圖
+                        
+                        result.append({
+                            "title": folder_type,  # 將子資料夾名稱作為 title
+                            "image": image,
+                            "thumbnail": thumbnail,
+                            "type": title  # 將主資料夾名稱作為 type
+                        })
     
     # 將結果按 title 進行排序
     result.sort(key=lambda x: x['title'].lower())
