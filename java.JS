@@ -860,7 +860,6 @@ $(".closer").click(function(){
     $('.ytcon').css('display','none'); 
     //讓header透明
     $('.page-header-bg').removeClass('header-bg-visable');
-    $('.page-header-bg').css("z-index","9999")
      //解開滾動#
      $(document).unbind("scroll");
      $('.scroller-bar').scrollTop(0);

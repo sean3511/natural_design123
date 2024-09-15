@@ -942,6 +942,7 @@ h5{
     text-align: center;
     z-index: 1;
 }
+
   /* overlay window******************************************************************** */
   .overlay{
     z-index: 1000 !important;
