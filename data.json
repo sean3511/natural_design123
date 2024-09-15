@@ -1,0 +1,8 @@
+[
+    {
+        "title": "image",
+        "image": "bg.jpg,bg_mb.jpg,island.png,main_visual.png,main_visual_mb.png,message.png",
+        "thumbnail": "bg.jpg",
+        "type": "image"
+    }
+]

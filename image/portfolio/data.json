@@ -1,0 +1,164 @@
+[
+    {
+        "title": "AIDOGELON",
+        "image": "mock01.jpg,mock02.png,mock03.png",
+        "thumbnail": "mock01.jpg",
+        "type": "web-design"
+    },
+    {
+        "title": "dragon_girl",
+        "image": "ana_01.gif,mock_01.jpg,mock_02.jpg,mock_03.jpg,mock_04.jpg,mock_05.jpg",
+        "thumbnail": "ana_01.gif",
+        "type": "art-design"
+    },
+    {
+        "title": "ETH刮刮樂",
+        "image": "mock01.png,mock02.png,mock03.png",
+        "thumbnail": "mock01.png",
+        "type": "UI-design"
+    },
+    {
+        "title": "KPMAX遊戲UI",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "UI-design"
+    },
+    {
+        "title": "MRH網頁設計",
+        "image": "mock01.png,mock02.png,mock03.png",
+        "thumbnail": "mock01.png",
+        "type": "web-design"
+    },
+    {
+        "title": "Myboom",
+        "image": "myboom01.jpg,myboom02.jpg,myboom03.jpg,myboom04.jpg,myboom05.jpg,myboom06.jpg",
+        "thumbnail": "myboom01.jpg",
+        "type": "UI-design"
+    },
+    {
+        "title": "Myboom管理後台",
+        "image": "pic01.png,pic02.png,pic03.png,pic04.png,pic05.png",
+        "thumbnail": "pic01.png",
+        "type": "UI-design"
+    },
+    {
+        "title": "rags網頁設計",
+        "image": "pic01.jpg,pic02.png,pic03.png,pic04.png",
+        "thumbnail": "pic01.jpg",
+        "type": "web-design"
+    },
+    {
+        "title": "scifi視覺設計",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png",
+        "thumbnail": "mock01.png",
+        "type": "art-design"
+    },
+    {
+        "title": "skyup社群圖",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg,mock05.jpg,mock06.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "W&E元宇宙",
+        "image": "mock01.png,mock02.png,mock03.jpg,mock04.jpg,mock05.jpg,mock06.png,mock07.png,mock08.png",
+        "thumbnail": "mock01.png",
+        "type": "UI-design"
+    },
+    {
+        "title": "《Pile up》小品手遊",
+        "image": "mock_01.png,mock_02.png,mock_03.png,play_01.png,play_02.png",
+        "thumbnail": "mock_01.png",
+        "type": "art-design"
+    },
+    {
+        "title": "《The Last Trace》遊戲",
+        "image": "mock_01.png,mock_02.png,mock_03.png,mock_04.png,mock_05.png,mock_06.png,mock_07.png,mock_08.png,mock_09.png,mock_10.png,mock_11.png,pics01.jpg,pics02.jpg,pics03.png,pics04.png,pics05.png,pics06.png",
+        "thumbnail": "mock_01.png",
+        "type": "art-design"
+    },
+    {
+        "title": "保險管家UI",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png,mock05.png",
+        "thumbnail": "mock01.png",
+        "type": "UI-design"
+    },
+    {
+        "title": "壹品酒業CIS設計",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg,mock05.jpg,mock05.png,mock06.jpg,mock07.jpg,mock08.jpg,mock09.png",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "女神543-banner",
+        "image": "mock01.png,mock02.png,mock03.png",
+        "thumbnail": "mock01.png",
+        "type": "graphic-design"
+    },
+    {
+        "title": "弘居酒屋專案",
+        "image": "mock01.png,mock02.png,mock03.png",
+        "thumbnail": "mock01.png",
+        "type": "graphic-design"
+    },
+    {
+        "title": "房仲形象DM",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg,mock05.jpg,mock06.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "斷食APP",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "UI-design"
+    },
+    {
+        "title": "溢紘工程T-shirt",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "絢居酒屋專案",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "美妝社群商品圖",
+        "image": "cosmetic_01.jpg,cosmetic_02.jpg,cosmetic_03.jpg,cosmetic_04.jpg,cosmetic_05.jpg",
+        "thumbnail": "cosmetic_01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "華航EDM設計",
+        "image": "pic01.jpg,pic02.jpg,pic03.jpg,pic04.jpg,pic05.jpg",
+        "thumbnail": "pic01.jpg",
+        "type": "web-design"
+    },
+    {
+        "title": "足球挖礦",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png",
+        "thumbnail": "mock01.png",
+        "type": "UI-design"
+    },
+    {
+        "title": "酒類社群圖文",
+        "image": "mock01.png",
+        "thumbnail": "mock01.png",
+        "type": "graphic-design"
+    },
+    {
+        "title": "鐵爸團隊LOGO",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "香腸團購DM",
+        "image": "mock01.jpg,mock02.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    }
+]
