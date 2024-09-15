@@ -1,15 +1,33 @@
 [
     {
+        "title": "2D鴿環專案",
+        "image": "mock01.png,mock02.png,mock03.png",
+        "thumbnail": "mock01.png",
+        "type": "art-design"
+    },
+    {
+        "title": "2D鴿鐘器械動畫",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png,mock05.png,mock06.png",
+        "thumbnail": "mock01.png",
+        "type": "art-design"
+    },
+    {
+        "title": "3D鴿環專案",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png,mock05.png",
+        "thumbnail": "mock01.png",
+        "type": "art-design"
+    },
+    {
+        "title": "3D鴿鐘器械動畫",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png,mock05.png,mock06.png,mock07.png,mock08.png",
+        "thumbnail": "mock01.png",
+        "type": "art-design"
+    },
+    {
         "title": "AIDOGELON",
         "image": "mock01.jpg,mock02.png,mock03.png",
         "thumbnail": "mock01.jpg",
         "type": "web-design"
-    },
-    {
-        "title": "dragon_girl",
-        "image": "ana_01.gif,mock_01.jpg,mock_02.jpg,mock_03.jpg,mock_04.jpg,mock_05.jpg",
-        "thumbnail": "ana_01.gif",
-        "type": "art-design"
     },
     {
         "title": "ETH刮刮樂",
@@ -184,5 +202,11 @@
         "image": "mock01.jpg,mock02.jpg",
         "thumbnail": "mock01.jpg",
         "type": "graphic-design"
+    },
+    {
+        "title": "龍骨角色設計",
+        "image": "ana_01.gif,mock_01.jpg,mock_02.jpg,mock_03.jpg,mock_04.jpg,mock_05.jpg",
+        "thumbnail": "ana_01.gif",
+        "type": "art-design"
     }
 ]
