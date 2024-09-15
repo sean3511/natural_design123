@@ -18,6 +18,12 @@
         "type": "UI-design"
     },
     {
+        "title": "Imakers名片",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png,mock05.png",
+        "thumbnail": "mock01.png",
+        "type": "graphic-design"
+    },
+    {
         "title": "KPMAX遊戲UI",
         "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg",
         "thumbnail": "mock01.jpg",
@@ -64,6 +70,12 @@
         "image": "mock01.png,mock02.png,mock03.jpg,mock04.jpg,mock05.jpg,mock06.png,mock07.png,mock08.png",
         "thumbnail": "mock01.png",
         "type": "UI-design"
+    },
+    {
+        "title": "X-mesageDM",
+        "image": "mock01.jpg,mock02.jpg,mock03.jpg,mock04.jpg",
+        "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
     },
     {
         "title": "《Pile up》小品手遊",
@@ -114,9 +126,21 @@
         "type": "UI-design"
     },
     {
+        "title": "日堯君",
+        "image": "mock01.png,mock02.png,mock03.png,mock04.png",
+        "thumbnail": "mock01.png",
+        "type": "graphic-design"
+    },
+    {
         "title": "溢紘工程T-shirt",
         "image": "mock01.jpg,mock02.jpg,mock03.jpg",
         "thumbnail": "mock01.jpg",
+        "type": "graphic-design"
+    },
+    {
+        "title": "直播活動海報",
+        "image": "mock01.png,mock02.jpg,mock03.png,mock04.png",
+        "thumbnail": "mock01.png",
         "type": "graphic-design"
     },
     {
