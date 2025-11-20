@@ -723,6 +723,8 @@ margin-right: -5px;
    }
    .main-nav label{
     position: relative;
+    bottom: 0;
+    transition: all 0.3s;
    }
    .main-nav label a{
     display: block;
@@ -732,10 +734,12 @@ margin-right: -5px;
     bottom: 0px;
     padding: 12px 28px;
    }
-    .main-nav label a:hover{
+  .main-nav label a:hover{
     color: rgba(255, 255, 255, 1) !important;
-    bottom: 12px;
    }
+  .main-nav label:hover{
+       bottom: 8px;
+  }
   
    .header_nav input[type=radio]:checked + label a {
     border-radius: 10000px;
