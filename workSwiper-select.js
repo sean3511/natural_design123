@@ -4,8 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const targetTitles = [
     "AIDOGELON",
     "ETH刮刮樂",
-    "3D鴿鐘器械動畫",
-    "KPMAX遊戲UI"
+    "W&E元宇宙",
+    "足球挖礦",
+    "Myboom",
+    "保險管家U",
+    "KPMAX遊戲UI",
+    "3D鴿鐘器械動畫"
   ];
 
   const wrapper = document.querySelector('#work .mySwiper .swiper-wrapper');
