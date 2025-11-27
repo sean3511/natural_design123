@@ -12,24 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- google font -->
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <div class="main-background"></div>
-    <div id="home">
     <div class="page-header-bg">
         <header class="page-header wrapper">
-                <ul class="main-nav header_nav" >
+         <ul class="main-nav header_nav" >
                     <li>
-                        <input type="radio" name="nav" id="nav-home" checked>
+                        <input type="radio" name="nav" id="nav-home">
                         <label for="nav-home">
                             <a href="index.html">Home</a>
                         </label>
                     </li>
 
                     <li>
-                        <input type="radio" name="nav" id="nav-about">
+                        <input type="radio" name="nav" id="nav-about" checked>
                         <label for="nav-about">
                             <a href="about.html">About</a>
                         </label>
@@ -58,7 +58,7 @@
             <li><a href="work.html">Work</a></li>
         </div>
         </div>
-        <div class="content-display wrapper">
+    <div id="home" class="content-display wrapper">
         <div class="header-block"></div>
         <div class="content-index">
             <div class="left-word-field">
@@ -76,6 +76,101 @@
             <div class="img-island-controller">
             <img class="img-island PC_UI" src="image/main_visual.png">
             <img class="img-island MB_UI" src="image/main_visual_mb.png">
+            </div>
+        </div>
+    </div>
+     <div id="about" class="about-display wrapper">
+            <div class="header-block"></div>
+            <div class="about-index">     
+                    <div class="main-intro">
+                        <div class="myname_con">
+                        <div class="name_block"></div>
+                        <h2>Hello,I'm Bill</h2>
+                    </div>
+                        <h3>整合產品設計師</h3>
+                        <h4>我具備從視覺設計到網頁開發的完整實作經驗，能夠整合 UI 設計與前端技術，提供一體化解決方案。無論是介面美感還是互動實現，都能確保品質與效率。歡迎直接說明需求，我將以專業協助你高效完成專案目標。</h4>
+                        <div class="arrow_container">
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                        </div>
+                    </div>
+                    <div class="about-Content">
+                                <div class="about-Content-gp about-tool">
+                                    <h2>工具</h2>
+                                    <div class="tool-controller">
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                        <div class="tool-logo"></div>
+                                    </div>
+                                </div>
+                                <div class="about-Content-gp about-skill">
+                                    <h2>技能</h2>
+                                    <div class="tool-controller">
+                                        <div class="skill-item"> <span>視覺設計</span></div>
+                                        <div class="skill-item"> <span>網頁設計</span></div>
+                                        <div class="skill-item"> <span>CIS Design</span></div>
+                                        <div class="skill-item"> <span>UI design-system</span></div>
+                                        <div class="skill-item"> <span>UI・UX</span></div>
+                                        <div class="skill-item"> <span>prototype</span></div>
+                                        <div class="skill-item"> <span>3DCG</span></div>
+                                        <div class="skill-item"> <span>HTML・CSS</span></div>
+                                        <div class="skill-item"> <span>Javascript</span></div>
+                                        <div class="skill-item"> <span>jquery</span></div>
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+    
+        </div>
+     <div id="contact" class="contact-content-display wrapper">
+        <div class="header-block"></div>
+        <div class="img-contact-controller main-pic-con">
+            <img class="img-message" src="image/message.png" alt="">
+            </div>
+        <h2 class="Contact-title">Contact</h2>
+        <div class="content-contact">
+            <div class="contact-left-area">
+            <span>如果您想詢問有關本網站的任何信息，請填寫下面的聯繫表格。我會盡快回复你。</span>
+            <div class="text-box">
+                <form action="https://formsubmit.co/yahoo3511@gmail.com" method="post">
+                    <input class="textarea" name="name" type="text" id="name" placeholder="姓名" required>
+                    <input class="textarea txt-email" onblur="checkEmail()" name="email" type="email" id="mail" placeholder="信箱" required>
+                    <textarea class="textarea textarea-msg" name="message" id="message" placeholder="請輸入訊息" required></textarea>
+                    <button class="main_btn" type="submit">
+                    送出
+                    </button>
+                </form>
+             </div>
+            </div>
+            <div class="contact-info">
+                <!-- <h5 class="text-info" >聯絡資訊</h5>
+                <p class="text-info">想了解更多，歡迎洽巡我的個人平台</p> -->
+                <div class="img-contact-controller">
+                <img class="img-message" src="image/message.png" alt="">
+                </div>
+                     <ul class="social-media-list">
+                        <!-- <li><a href="https://www.facebook.com/profile.php?id=100001143116282" class="contact-icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://www.behance.net/yahoo3511ca2f" class="contact-icon">
+                        <i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li> -->
+                        <li><a href="https://www.linkedin.com/in/390878212/" class="contact-icon">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <!-- <li><a href="https://www.instagram.com/yahoo3511/" class="contact-icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li> -->
+                  </ul>
             </div>
         </div>
     </div>

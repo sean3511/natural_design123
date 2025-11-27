@@ -2,721 +2,7 @@ var overlay = document.getElementById("full_pop");
 var closer =document.getElementsByClassName("close")[0];
 var background =document.getElementById("home");
 var Img_container = document.getElementsByClassName("popup-photo-container")[0]; //获得dom对象
-$(".aidogelon_web").click(function(){
-    $('.title_blocker').hide();
-    $('.linkicon').css('display','block'); 
-    $('.worklink').attr('href','https://aidogelon.ai/');
-    $('.popup-title').html("mrh_web");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/aidogelon/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
 
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/aidogelon/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/aidogelon/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
- });
-$(".mrh_web").click(function(){
-    $('.title_blocker').hide();
-    $('.linkicon').css('display','block'); 
-    $('.worklink').attr('href','https://mrh-beauty.glitch.me/');
-    $('.popup-title').html("mrh_web");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/mrh_web/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/mrh_web/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/mrh_web/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
- });
-$(".ins_keeper").click(function(){
-    $('.popup-title').html("保險管家UI");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/ins_keeper/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/ins_keeper/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/ins_keeper/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/ins_keeper/mock04.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/ins_keeper/mock05.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
- });
-$(".ironfather").click(function(){
-    $('.popup-title').html("鐵爸團隊LOGO");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/ironfather_logo/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/ironfather_logo/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/ironfather_logo/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
- });
-$(".metaverse-scratchup").click(function(){
-    $('.popup-title').html("ETH刮刮樂");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/metaverse_scratchup/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/metaverse_scratchup/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/metaverse_scratchup/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
- });
-$(".soccermining").click(function(){
-    $('.popup-title').html("足球挖礦專案");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/scooermining/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/scooermining/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/scooermining/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/scooermining/mock04.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
- });
-$(".xuan").click(function(){
-    $('.popup-title').html("絢居酒屋專案");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/xuan/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/xuan/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/xuan/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/xuan/mock04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
- });
- $(".hong").click(function(){
-    $('.popup-title').html("弘居酒屋專案");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/hong/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/hong/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/hong/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
- });
- $(".ahong-saussage").click(function(){
-    $('.popup-title').html("香腸團購DM");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/ahong-saussage/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/ahong-saussage/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
- });
-$(".W-Emetaverse").click(function(){
-    $('.popup-title').html("W&E元宇宙");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/W&Emetaverse/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/W&Emetaverse/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/W&Emetaverse/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/W&Emetaverse/mock04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/W&Emetaverse/mock05.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
-
-        var Img6 = document.createElement("img");		//创建一个img元素
-        addClass(Img6, 'popup-img');
-		Img6.src="/image/portfolio/W&Emetaverse/mock06.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img6);  	//为dom添加子元素img
-
-        var Img7 = document.createElement("img");		//创建一个img元素
-        addClass(Img7, 'popup-img');
-		Img7.src="/image/portfolio/W&Emetaverse/mock07.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img7);  	//为dom添加子元素img
-
-        var Img8 = document.createElement("img");		//创建一个img元素
-        addClass(Img8, 'popup-img');
-		Img8.src="/image/portfolio/W&Emetaverse/mock08.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img8);  	//为dom添加子元素img
-
- });
-$(".diet_app").click(function(){
-    $('.popup-title').html("斷食APP");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/diet_app/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/diet_app/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/diet_app/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/diet_app/mock04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
- });
-$(".skyup").click(function(){
-    $('.popup-title').html("skyup社群圖");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/skyup/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/skyup/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/skyup/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/skyup/mock04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/skyup/mock05.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
-
-        var Img6 = document.createElement("img");		//创建一个img元素
-        addClass(Img6, 'popup-img');
-		Img6.src="/image/portfolio/skyup/mock06.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img6);  	//为dom添加子元素img
- });
-$(".house_sell_dm").click(function(){
-    $('.popup-title').html("房仲形象DM");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/house_sell_dm/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/house_sell_dm/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/house_sell_dm/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/house_sell_dm/mock04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/house_sell_dm/mock05.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
-
-        var Img6 = document.createElement("img");		//创建一个img元素
-        addClass(Img6, 'popup-img');
-		Img6.src="/image/portfolio/house_sell_dm/mock06.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img6);  	//为dom添加子元素img
- });
-$(".KPMAX").click(function(){
-    $('.popup-title').html("KPMAX遊戲UI");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/KPMAX/mock01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/KPMAX/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/KPMAX/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/KPMAX/mock04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
- });
-$(".work-rags").click(function(){
-    $('.title_blocker').hide();
-    $('.linkicon').css('display','block'); 
-   $('.worklink').attr('href','https://rags-tw.com/');
-    $('.popup-title').html("rags網頁設計");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/rags/pic01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/rags/pic02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/rags/pic03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/rags/pic04.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
- });
-$(".work-chine_air").click(function(){
-        $('.popup-title').html("華航EDM設計");
-        $('.title_blocker').hide();
-        $('.linkicon').css('display','block'); 
-        $('.worklink').attr('href','https://chinaair.glitch.me/');
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/china_airplane/pic01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/china_airplane/pic02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/china_airplane/pic03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/china_airplane/pic04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-        
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/china_airplane/pic05.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
- });
-$(".work-myboom-cms").click(function(){
-    $('.popup-title').html("Myboom管理後台");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/myboom_cms/pic01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/myboom_cms/pic02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/myboom_cms/pic03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/myboom_cms/pic04.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-        
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/myboom_cms/pic05.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
- });
-$(".work-myboom").click(function(){
-    $('.popup-title').html("Myboom");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/myboom/myboom01.jpg";
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/myboom/myboom02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/myboom/myboom03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/myboom/myboom04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/myboom/myboom05.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
-
-        var Img6 = document.createElement("img");		//创建一个img元素
-        addClass(Img6, 'popup-img');
-		Img6.src="/image/portfolio/myboom/myboom06.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img6);  	//为dom添加子元素img
-        
- });
-$(".work-cosmetic").click(function(){
-    $('.popup-title').html("美妝社群<br>商品圖");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/re_cosmetic/cosmetic_01.jpg";
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/re_cosmetic/cosmetic_02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/re_cosmetic/cosmetic_03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/re_cosmetic/cosmetic_04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/re_cosmetic/cosmetic_05.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
-
- });
-$(".work-siyi").click(function(){
-    $('.popup-title').html("溢紘工程<br>T-shirt");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/siyi/mock01.jpg";
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/siyi/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/siyi/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
- });
-$(".work-yipin").click(function(){
-    $('.popup-title').html("壹品酒業CIS設計");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/yipin/mock01.jpg";
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/yipin/mock02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/yipin/mock03.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/yipin/mock04.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/yipin/mock05.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
-
-        var Img6 = document.createElement("img");		//创建一个img元素
-        addClass(Img6, 'popup-img');
-		Img6.src="/image/portfolio/yipin/mock06.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img6);  	//为dom添加子元素img
-
-        var Img7 = document.createElement("img");		//创建一个img元素
-        addClass(Img7, 'popup-img');
-		Img7.src="/image/portfolio/yipin/mock07.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img7);  	//为dom添加子元素img
-
-        var Img8 = document.createElement("img");		//创建一个img元素
-        addClass(Img8, 'popup-img');
-		Img8.src="/image/portfolio/yipin/mock08.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img8);  	//为dom添加子元素img
-
-        var Img9 = document.createElement("img");		//创建一个img元素
-        addClass(Img9, 'popup-img');
-		Img9.src="/image/portfolio/yipin/mock09.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img9);  	//为dom添加子元素img
- });
-$(".work-alcholAd").click(function(){
-    $('.popup-title').html("酒類社群圖文");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/alcohol_media/mock01.png";
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/alcohol_media/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
- });
-$(".work-Ggod").click(function(){
-    $('.popup-title').html("女神543<br>Banner");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/girl_god/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/girl_god/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/girl_god/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
- });
-$(".work-scifi").click(function(){
-    $('.popup-title').html("scifi視覺設計");
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/scifi/mock01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/scifi/mock02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/scifi/mock03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/scifi/mock04.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
- });
-$(".work-the-last-trace").click(function(){
-    $('.popup-title').html("The Last Trace");
-    $('.title_blocker').hide();
-    $('.ytcon').css('display','block'); 
-   $('.ytlink').attr('href','https://www.youtube.com/watch?v=SCfi2EXUZWc');
-        var Img1 = document.createElement("img");		//创建一个img元素
-        addClass(Img1, 'popup-img');
-		Img1.src="/image/portfolio/the_last_trace/mock_01.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img1);  	//为dom添加子元素img
-        var Img2 = document.createElement("img");		//创建一个img元素
-        addClass(Img2, 'popup-img');
-		Img2.src="/image/portfolio/the_last_trace/mock_02.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img2);  	//为dom添加子元素img
-        var Img3 = document.createElement("img");		//创建一个img元素
-        addClass(Img3, 'popup-img');
-		Img3.src="/image/portfolio/the_last_trace/mock_03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img3);  	//为dom添加子元素img
-        var Img4 = document.createElement("img");		//创建一个img元素
-        addClass(Img4, 'popup-img');
-		Img4.src="/image/portfolio/the_last_trace/mock_04.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img4);  	//为dom添加子元素img
-        var Img5 = document.createElement("img");		//创建一个img元素
-        addClass(Img5, 'popup-img');
-		Img5.src="/image/portfolio/the_last_trace/mock_05.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img5);  	//为dom添加子元素img
-        var Img6 = document.createElement("img");		//创建一个img元素
-        addClass(Img6, 'popup-img');
-		Img6.src="/image/portfolio/the_last_trace/mock_06.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img6);  	//为dom添加子元素img
-        var Img7 = document.createElement("img");		//创建一个img元素
-        addClass(Img7, 'popup-img');
-		Img7.src="/image/portfolio/the_last_trace/mock_07.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img7);  	//为dom添加子元素img
-        var Img8 = document.createElement("img");		//创建一个img元素
-        addClass(Img8, 'popup-img');
-		Img8.src="/image/portfolio/the_last_trace/mock_08.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img8);  	//为dom添加子元素img
-        var Img9 = document.createElement("img");		//创建一个img元素
-        addClass(Img9, 'popup-img');
-		Img9.src="/image/portfolio/the_last_trace/mock_09.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img9);  	//为dom添加子元素img
-        var Img10 = document.createElement("img");		//创建一个img元素
-        addClass(Img10, 'popup-img');
-		Img10.src="/image/portfolio/the_last_trace/mock_10.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img10);  	//为dom添加子元素img
-        var Img11 = document.createElement("img");		//创建一个img元素
-        addClass(Img11, 'popup-img');
-		Img11.src="/image/portfolio/the_last_trace/mock_11.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img11);  	//为dom添加子元素img
-        var Img12 = document.createElement("img");		//创建一个img元素
-        addClass(Img12, 'popup-img');
-		Img12.src="/image/portfolio/the_last_trace/pics01.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img12);  	//为dom添加子元素img
-        var Img13 = document.createElement("img");		//创建一个img元素
-        addClass(Img13, 'popup-img');
-		Img13.src="/image/portfolio/the_last_trace/pics02.jpg";   //给img元素的src属性赋值
-		Img_container.appendChild(Img13);  	//为dom添加子元素img
-        var Img14 = document.createElement("img");		//创建一个img元素
-        addClass(Img14, 'popup-img');
-		Img14.src="/image/portfolio/the_last_trace/pics03.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img14);  	//为dom添加子元素img
-        var Img15 = document.createElement("img");		//创建一个img元素
-        addClass(Img15, 'popup-img');
-		Img15.src="/image/portfolio/the_last_trace/pics04.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img15);  	//为dom添加子元素img
-        var Img16 = document.createElement("img");		//创建一个img元素
-        addClass(Img16, 'popup-img');
-		Img16.src="/image/portfolio/the_last_trace/pics05.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img16);  	//为dom添加子元素img
-        var Img17 = document.createElement("img");		//创建一个img元素
-        addClass(Img17, 'popup-img')
-		Img17.src="/image/portfolio/the_last_trace/pics06.png";   //给img元素的src属性赋值
-		Img_container.appendChild(Img17);  	//为dom添加子元素img
- });
-// $(".work-TAG").click(function(){
-//     $('.popup-title').html("TAG");
-//          $('.title_blocker').hide();
-//          $('.ytcon').css('display','block'); 
-//         $('.ytlink').attr('href','https://www.youtube.com/watch?v=0Gwwu1hpssU');
-//         var Img1 = document.createElement("img");		//创建一个img元素
-//         addClass(Img1, 'popup-img');
-// 		Img1.src="/image/portfolio/tag/mock_01.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-//         var Img2 = document.createElement("img");		//创建一个img元素
-//         addClass(Img2, 'popup-img');
-// 		Img2.src="/image/portfolio/tag/mock_02.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-//         var Img3 = document.createElement("img");		//创建一个img元素
-//         addClass(Img3, 'popup-img');
-// 		Img3.src="/image/portfolio/tag/mock_03.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-//         var Img4 = document.createElement("img");		//创建一个img元素
-//         addClass(Img4, 'popup-img');
-// 		Img4.src="/image/portfolio/tag/mock_04.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-//         var Img5 = document.createElement("img");		//创建一个img元素
-//         addClass(Img5, 'popup-img');
-// 		Img5.src="/image/portfolio/tag/mock_05.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img5);  	//为dom添加子元5img
-
-//         var Img6 = document.createElement("img");		//创建一个img元素
-//         addClass(Img6, 'popup-img');
-// 		Img6.src="/image/portfolio/tag/item_01.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img6);  	//为dom添加子元5img
-
-//         var Img7 = document.createElement("img");		//创建一个img元素
-//         addClass(Img7, 'popup-img');
-// 		Img7.src="/image/portfolio/tag/item_02.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img7);  	//为dom添加子元5img
-
-//         var Img8 = document.createElement("img");		//创建一个img元素
-//         addClass(Img8, 'popup-img');
-// 		Img8.src="/image/portfolio/tag/item_03.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img8);  	//为dom添加子元5img
-
-//         var Img9 = document.createElement("img");		//创建一个img元素
-//         addClass(Img9, 'popup-img');
-// 		Img9.src="/image/portfolio/tag/item_04.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img9);  	//为dom添加子元5img
-
-//         var Img10 = document.createElement("img");		//创建一个img元素
-//         addClass(Img10, 'popup-img');
-// 		Img10.src="/image/portfolio/tag/item_05.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img10);  	//为dom添加子元5img
-        
-//         //創建yt
-//  });
 $(".work-pile-up").click(function(){
     $('.popup-title').html("Pile up");
         var Img1 = document.createElement("img");		//创建一个img元素
@@ -744,95 +30,6 @@ $(".work-pile-up").click(function(){
 		Img5.src="/image/portfolio/pileup/play_02.png";   //给img元素的src属性赋值
 		Img_container.appendChild(Img5);  	//为dom添加子元素img
  });
-// $(".work-dragon-girl").click(function(){
-//     $('.popup-title').html("DragonBone動態少女");
-//         var Img2 = document.createElement("img");		//创建一个img元素
-//         addClass(Img2, 'popup-img');
-// 		Img2.src="/image/portfolio/dragon_girl/ana_01.gif";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-//         var Img1 = document.createElement("img");		//创建一个img元素
-//         addClass(Img1, 'popup-img');
-// 		Img1.src="/image/portfolio/dragon_girl/mock_01.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-//         var Img3 = document.createElement("img");		//创建一个img元素
-//         addClass(Img3, 'popup-img');
-// 		Img3.src="/image/portfolio/dragon_girl/mock_02.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img3);  	//为dom添加子元素img
-
-//         var Img4 = document.createElement("img");		//创建一个img元素
-//         addClass(Img4, 'popup-img');
-// 		Img4.src="/image/portfolio/dragon_girl/mock_03.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img4);  	//为dom添加子元素img
-
-//         var Img5 = document.createElement("img");		//创建一个img元素
-//         addClass(Img5, 'popup-img');
-// 		Img5.src="/image/portfolio/dragon_girl/mock_04.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img5);  	//为dom添加子元素img
-
-//         var Img6 = document.createElement("img");		//创建一个img元素
-//         addClass(Img6, 'popup-img');
-// 		Img6.src="/image/portfolio/dragon_girl/mock_05.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img6);  	//为dom添加子元素img
-//  });
-
-// $(".work-stack").click(function(){
-//     $('.popup-title').html("堆疊傳奇");
-//         var Img1 = document.createElement("img");		//创建一个img元素
-//         addClass(Img1, 'popup-img');
-// 		Img1.src="/image/portfolio/stack/mock_01.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img1);  	//为dom添加子元素img
-
-//         var Img2 = document.createElement("img");		//创建一个img元素
-//         addClass(Img2, 'popup-img');
-// 		Img2.src="/image/portfolio/stack/mock_02.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img2);  	//为dom添加子元素img
-
-//         var Img3 = document.createElement("img");		//创建一个img元素
-//         addClass(Img3, 'popup-img');
-// 		Img3.src="/image/portfolio/stack/mock_03.jpg";   //给img元素的src属性赋值
-// 		Img_container.appendChild(Img3);  	//为dom添加子元素img
-//  });
-// $(".work-game-ui").click(function(){
-//     $('.popup-title').html("遊戲UI設計");
-//         var work_game_Img1 = document.createElement("img");		//创建一个img元素
-//         addClass(work_game_Img1, 'popup-img');
-// 		work_game_Img1.src="/image/portfolio/game_UI/gameUI_01.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(work_game_Img1);  	//为dom添加子元素img
-
-//         var work_game_Img2 = document.createElement("img");		//创建一个img元素
-//         addClass(work_game_Img2, 'popup-img');
-// 		work_game_Img2.src="/image/portfolio/game_UI/gameUI_02.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(work_game_Img2);  	//为dom添加子元素img
-
-//         var work_game_Img3 = document.createElement("img");		//创建一个img元素
-//         addClass(work_game_Img3, 'popup-img');
-// 		work_game_Img3.src="/image/portfolio/game_UI/gameUI_03.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(work_game_Img3);  	//为dom添加子元素img
-
-//         var work_game_Img4 = document.createElement("img");		//创建一个img元素
-//         addClass(work_game_Img4, 'popup-img');
-// 		work_game_Img4.src="/image/portfolio/game_UI/gameUI_04.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(work_game_Img4);  	//为dom添加子元素img
-//  });
-// $(".work-sofa-app").click(function(){
-//     $('.popup-title').html("沙發APP設計");
-//         var work_sofa_Img1 = document.createElement("img");		//创建一个img元素
-//         addClass(work_sofa_Img1, 'popup-img');
-// 		work_sofa_Img1.src="/image/portfolio/sofa_app/shop01.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(work_sofa_Img1);  	//为dom添加子元素img
-
-//         var work_sofa_Img2 = document.createElement("img");		//创建一个img元素
-//         addClass(work_sofa_Img2, 'popup-img');
-// 		work_sofa_Img2.src="/image/portfolio/sofa_app/shop02.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(work_sofa_Img2);  	//为dom添加子元素img
-
-//         var work_sofa_Img3 = document.createElement("img");		//创建一个img元素
-//         addClass(work_sofa_Img3, 'popup-img');
-// 		work_sofa_Img3.src="/image/portfolio/sofa_app/shop03.png";   //给img元素的src属性赋值
-// 		Img_container.appendChild(work_sofa_Img3);  	//为dom添加子元素img
-//  });
 $(".tile").click(function(){
     //讓header透明
     $('.page-header-bg').addClass('header-bg-visable');
@@ -959,38 +156,64 @@ $(window).scroll(function(){
     );
 });
 $(".nav-ham").click(function(){
-    if($(this).hasClass('openclicked')) {
-    //關閉div
-
+  if($(this).hasClass('openclicked')) {
+    // 關閉 div
     $('.mobile-nav').css("opacity", "1.0").animate({opacity: 0}, 50, function(){
-        $('.mobile-nav').css("visibility", "hidden");
+      $('.mobile-nav').css("visibility", "hidden");
     });
 
-    //解開滾動
+    // 解開滾動
     $(document).unbind("scroll");
-    
+
     $(this).animate({opacity:0},300,function(){
-        $('.nav-ham-logo').toggleClass('nav-logo-changer');
-    })
-    $(this).animate({opacity:1},300,)
+      $('.nav-ham-logo').toggleClass('nav-logo-changer');
+    });
+    $(this).animate({opacity:1},300);
     $(this).removeClass('openclicked');
-    }
-    else {
-     //打開div
-     $(".mobile-nav").css({'visibility': "visible",'opacity':'0' }).animate({opacity: 1}, 50);
+  } else {
+    // 打開 div
+    $(".mobile-nav").css({'visibility': "visible",'opacity':'0' }).animate({opacity: 1}, 50);
 
-     //綁定滾動
-     var tops = $(document).scrollTop();//当页面滚动时，把当前距离赋值给页面，这样保持页面滚动条不动
-     $(document).bind("scroll",function (){$(document).scrollTop(tops); });   
+    // 綁定滾動（鎖住背景）
+    var tops = $(document).scrollTop();
+    $(document).bind("scroll", function (){
+      $(document).scrollTop(tops);
+    });
 
-        $(this).animate({opacity:0},300,function(){
-            $('.nav-ham-logo').toggleClass('nav-logo-changer');
-        })
-        $(this).animate({opacity:1},300,)
-      $(this).addClass('openclicked');
-    }
-    $('.page-header').toggleClass('header-limitH');
-    $('.page-header-bg').toggleClass('header-expend');
+    $(this).animate({opacity:0},300,function(){
+      $('.nav-ham-logo').toggleClass('nav-logo-changer');
+    });
+    $(this).animate({opacity:1},300);
+    $(this).addClass('openclicked');
+  }
+
+  $('.page-header').toggleClass('header-limitH');
+  $('.page-header-bg').toggleClass('header-expend');
+});
+
+
+// ⭐ 新增這段：點 mobile-nav 任何一個 <a> 時，先關 menu + 解鎖捲動
+$('.mobile-nav a').on('click', function () {
+  // 關閉 mobile nav
+  $('.mobile-nav').css("opacity", "1.0").animate({opacity: 0}, 50, function () {
+    $('.mobile-nav').css("visibility", "hidden");
+  });
+
+  // 解鎖滾動
+  $(document).unbind("scroll");
+
+  // 還原漢堡圖示狀態
+  const $ham = $('.nav-ham');
+  if ($ham.hasClass('openclicked')) {
+    $ham.animate({opacity:0},300,function(){
+      $('.nav-ham-logo').toggleClass('nav-logo-changer');
+    }).animate({opacity:1},300);
+    $ham.removeClass('openclicked');
+  }
+
+  // 還原 header 狀態
+  $('.page-header').removeClass('header-limitH');
+  $('.page-header-bg').removeClass('header-expend');
 });
 //及時測試信箱正確
 
@@ -1048,3 +271,55 @@ function sendMail() {
 // 原文是inputs.forEach(function(input){})
      
 
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.page-header-bg');
+  const headerHeight = header ? header.offsetHeight : 0;
+
+  const navLinks = document.querySelectorAll('.header_nav a, .mobile-nav a');
+
+  const sectionMap = {
+    'index.html': 'home',
+    'about.html': 'about',
+    'contact.html': 'contact'
+  };
+
+  const currentPage = (location.pathname.split('/').pop() || 'index.html');
+  const isIndex = (currentPage === 'index.html' || currentPage === '');
+
+  function scrollToIdTop(id) {
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    const top = target.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: top - headerHeight,
+      behavior: 'smooth'
+    });
+  }
+
+  // 主選單點擊事件
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || !sectionMap[href]) return; // 跳過 Work 或其他
+
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = sectionMap[href];
+
+      if (isIndex) {
+        // index.html → 滑動到上方
+        scrollToIdTop(targetId);
+      } else {
+        // 其他頁 → 導回 index.html#id
+        window.location.href = 'index.html#' + targetId;
+      }
+    });
+  });
+
+  // index.html 進場時如果帶著 hash，就捲到該區域
+  if (isIndex && window.location.hash) {
+    const id = window.location.hash.substring(1);
+    setTimeout(() => scrollToIdTop(id), 10);
+  }
+});
