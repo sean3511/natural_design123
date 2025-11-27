@@ -82,15 +82,50 @@ img{
 }
 .nav-ham-logo{
   /* z-index: -1; */
- width: 50px;
- height: 50px;
+ width: 50px !important;
+ height: 50px !important;
  cursor: pointer;
 }
-.nav-logo-changer{
-  max-width: 50px;
-  max-height: 50px;
+.nav-ham-close{
+  max-width: 50px !important;
+  max-height: 50px !important; 
   filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(144deg) brightness(95%) contrast(107%);
   content: url('../image/cross.svg');
+}
+.no-scroll{
+  overflow: hidden
+}
+.nav-ham{
+  z-index: 500;
+  display: none;  /* 桌機隱藏 */
+  cursor: pointer;
+}
+
+.nav-ham-logo{
+  width: 50px !important;
+  height: 50px !important;
+  cursor: pointer;
+}
+
+.nav-ham-close{
+  width: 50px !important;
+  height: 50px !important; 
+  max-width: 50px !important;
+  max-height: 50px !important; 
+  filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(144deg) brightness(95%) contrast(107%);
+  display: none; /* 預設隱藏 */
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+/* .openclicked 狀態：顯示 close，隱藏 menu */
+.nav-ham.openclicked .nav-ham-logo {
+  display: none;
+}
+.nav-ham.openclicked .nav-ham-close {
+  display: block;
 }
 
 .mobile-nav{
@@ -110,7 +145,7 @@ img{
 .mobile-nav li{
   margin: 20px
 }
-.mobile-nav a{
+.mobile-nav p{
   position: relative;
   display: inline-block;
   /* font-family: monospace; */
@@ -122,7 +157,7 @@ img{
   border-radius: 16px;
   border: 2px solid white;
 }
-.mobile-nav a:hover{
+.mobile-nav p:hover{
   border: 2px solid C49C2B;
   color:C49C2B;
 }
@@ -309,6 +344,49 @@ h5{
 }
 .main_btn >*{
   font-size: 20px;
+  display: block;
+  font-weight: 500;
+}
+.second_btn{
+   position: relative;
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+
+  color: #D9B756 !important;
+  font-size: 20px;
+  font-weight: 500;
+
+  border-radius: 9999px;
+  background: transparent;   /* 本體不要底色 */
+  border: none;              /* 不用原生 border */
+  overflow: visible;
+}
+.second_btn::before{
+    content: "";
+  position: absolute;
+  inset: 0;                 /* 貼齊按鈕邊緣 */
+  padding: 2px;             /* 邊框粗細：改這裡 */
+  border-radius: inherit;
+  pointer-events: none;
+
+  /* 金色漸層 */
+  background: linear-gradient(
+    137deg,
+    #FBE39A 0%,
+    #C49C2B 100%
+  );
+
+  /* 🔑 用 mask 把中間挖空，只留下邊 */
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+}
+.second_btn >*{
+
+   font-size: 20px;
+   color: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
   display: block;
   font-weight: 500;
 }
@@ -722,12 +800,9 @@ margin-right: -5px;
             mask-composite: exclude;
     pointer-events: none;
    }
+
    .main-nav label{
-    position: relative;
-    bottom: 0;
-    transition: all 0.3s;
-   }
-   .main-nav label a{
+    border-radius: 10000px;
     display: block;
     position: relative;
     transition: all 0.3s;
@@ -735,14 +810,13 @@ margin-right: -5px;
     bottom: 0px;
     padding: 12px 28px;
    }
-  .main-nav label a:hover{
-    color: rgba(255, 255, 255, 1) !important;
-   }
   .main-nav label:hover{
-       bottom: 8px;
-  }
-  
-   .header_nav input[type=radio]:checked + label a {
+    color: rgba(255, 255, 255, 1) !important;
+    bottom: 8px;
+   }
+
+   .header_nav input[type=radio]:checked + label{
+    color: rgba(255, 255, 255, 1) !important;
     border-radius: 10000px;
     background: linear-gradient(137deg, #FBE39A 0%, #C49C2B 100%);
     box-shadow: 0px 4px 28.2px 0px rgba(255, 255, 255, 0.25) inset, 0px 16px 28.9px 0px rgba(196, 161, 24, 0.5);
@@ -1421,9 +1495,114 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
 .MB_UI{
   display: none;
 }
+.Sec-work-title{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 滑動卡片專區 */
+/* Swiper 容器寬度自己調 */
+.swiper {
+  width: 100%;
+  padding: 40px 0;
+}
+.swiper-wrapper{
+  gap: 16px;
+}
+/* 每一張卡片的真正尺寸 */
+.swiper-slide {
+  width: 216px !important;          /* 卡片寬度 */
+  height: 318px !important;         /* 卡片高度 */
+  flex-shrink: 0;
+  border-radius: 16px;
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;   /* 文字靠底部 */
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+
+  /* 不要再設背景色，讓 pseudo elements 處理 */
+  background: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* 你的卡片設定可以用剛剛那整段 .card / .card__image / .card__body */
+.card {
+  position: relative;
+  width: 216px;
+  max-width: 42vw;
+  border-radius: 12px;
+  padding: 2px;
+  background: linear-gradient(300deg, #ffe96f 0%, #00e4ce 100%);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+
+/* 漸層外框 */
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(300deg, #00e4ce 0%, #ffe96f 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: -1;
+}
+
+/* 內層背景圖（真正的卡片內容區） */
+.swiper-slide::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 14px;
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* 文字要蓋在背景上面 */
+.swiper-slide {
+  position: relative;
+}
+.mySwiper{
+   position: relative;
+  overflow: hidden;
+
+  /* 左右兩側透明 fade-out */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,1) 10%,
+    rgba(0,0,0,1) 90%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,1) 10%,
+    rgba(0,0,0,1) 90%,
+    transparent 100%
+  );
+}
+
 @media(max-width: 1024px) {
   .page-header-bg{
-    height: 60px;
+    height: 60px ;
   }
   .main-background{
     background: url(../image/bg_mb.jpg)  50% / cover no-repeat, radial-gradient(88.24% 62.75% at -2.6% 3.1%, #19191B 0%, #232323 14.7%, #08090C 100%), #FFF;  
@@ -1461,11 +1640,19 @@ text-shadow: 2px 2px 50px rgba(0, 7, 14, 0.301);
   }
 /* header藏起來 */
 .nav-ham{
-  display:block;
-}
-.main-nav{
-  display: none;
-}
+    display:block;
+  }
+  .hampositon{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+  }
+  .main-nav{
+    display: none;
+  }
+  .work-nav{
+    display: flex !important;
+  }
 /* header寬度控制 */
 .page-header{
   justify-content: end;

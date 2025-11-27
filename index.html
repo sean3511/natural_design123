@@ -14,50 +14,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- google font -->
-     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="main-background"></div>
     <div class="page-header-bg">
-        <header class="page-header wrapper">
-         <ul class="main-nav header_nav" >
-                    <li>
-                        <input type="radio" name="nav" id="nav-home">
-                        <label for="nav-home">
-                            <a href="index.html">Home</a>
-                        </label>
-                    </li>
+    <header class="page-header wrapper">
+        <ul class="main-nav header_nav">
+        <li>
+            <input type="radio" name="nav" id="nav-home">
+            <label for="nav-home" data-target="home">Home</label>
+        </li>
 
-                    <li>
-                        <input type="radio" name="nav" id="nav-about" checked>
-                        <label for="nav-about">
-                            <a href="about.html">About</a>
-                        </label>
-                    </li>
+        <li>
+            <input type="radio" name="nav" id="nav-about" checked>
+            <label for="nav-about" data-target="about">About</label>
+        </li>
 
-                    <li>
-                        <input type="radio" name="nav" id="nav-contact">
-                        <label for="nav-contact">
-                            <a href="contact.html">Contact</a>
-                        </label>
-                    </li>
+        <li>
+            <input type="radio" name="nav" id="nav-contact">
+            <label for="nav-contact" data-target="contact">Contact</label>
+        </li>
 
-                    <li>
-                        <input type="radio" name="nav" id="nav-work">
-                        <label for="nav-work">
-                            <a href="work.html">Work</a>
-                        </label>
-                    </li>
-                </ul>
-            <a class="nav-ham" ><img class="nav-ham-logo" src="image/menu.svg" alt=""></a>
-        </header>
-        <div class="mobile-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="work.html">Work</a></li>
-        </div>
-        </div>
+        <li>
+            <input type="radio" name="nav" id="nav-work">
+            <label for="nav-work" data-target="work">Work</label>
+        </li>
+        </ul>
+
+        <a class="nav-ham">
+        <img class="nav-ham-logo hampositon" src="image/menu.svg" alt="">
+        <img class="nav-ham-close  hampositon" src="image/cross.svg" alt="">
+        </a>
+    </header>
+
+    <div class="mobile-nav">
+        <li><p data-target="home">Home</p></li>
+        <li><p data-target="about">About</p></li>
+        <li><p data-target="contact">Contact</p></li>
+        <li><p data-target="work">Work</p></li>
+    </div>
+    </div>
     <div id="home" class="content-display wrapper">
         <div class="header-block"></div>
         <div class="content-index">
@@ -79,7 +76,24 @@
             </div>
         </div>
     </div>
-     <div id="about" class="about-display wrapper">
+    <section id="work" class="wrapper">
+        <div class="Sec-work-title">
+            <h3>近期作品</h3>
+             <a href="work.html">
+                    <div class="second_btn">瀏覽作品
+                    </div>
+                   </a>
+        </div>
+        <!-- Card Slider Section -->
+         <a href="work.html">
+                    <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            </div>
+        </div>
+         </a>
+
+    </section>
+     <section id="about" class="about-display wrapper">
             <div class="header-block"></div>
             <div class="about-index">     
                     <div class="main-intro">
@@ -130,8 +144,8 @@
                     </div>
             </div>
     
-        </div>
-     <div id="contact" class="contact-content-display wrapper">
+     </section>
+     <section id="contact" class="contact-content-display wrapper">
         <div class="header-block"></div>
         <div class="img-contact-controller main-pic-con">
             <img class="img-message" src="image/message.png" alt="">
@@ -173,8 +187,11 @@
                   </ul>
             </div>
         </div>
-    </div>
+     </section>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="java.JS"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="card-slider.js"></script>
+<script src="workSwiper-select.js"></script>
 </body>
 </html>

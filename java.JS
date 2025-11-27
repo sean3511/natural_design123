@@ -155,66 +155,8 @@ $(window).scroll(function(){
         $('.arrow_container').removeClass('arrow_visable')
     );
 });
-$(".nav-ham").click(function(){
-  if($(this).hasClass('openclicked')) {
-    // 關閉 div
-    $('.mobile-nav').css("opacity", "1.0").animate({opacity: 0}, 50, function(){
-      $('.mobile-nav').css("visibility", "hidden");
-    });
-
-    // 解開滾動
-    $(document).unbind("scroll");
-
-    $(this).animate({opacity:0},300,function(){
-      $('.nav-ham-logo').toggleClass('nav-logo-changer');
-    });
-    $(this).animate({opacity:1},300);
-    $(this).removeClass('openclicked');
-  } else {
-    // 打開 div
-    $(".mobile-nav").css({'visibility': "visible",'opacity':'0' }).animate({opacity: 1}, 50);
-
-    // 綁定滾動（鎖住背景）
-    var tops = $(document).scrollTop();
-    $(document).bind("scroll", function (){
-      $(document).scrollTop(tops);
-    });
-
-    $(this).animate({opacity:0},300,function(){
-      $('.nav-ham-logo').toggleClass('nav-logo-changer');
-    });
-    $(this).animate({opacity:1},300);
-    $(this).addClass('openclicked');
-  }
-
-  $('.page-header').toggleClass('header-limitH');
-  $('.page-header-bg').toggleClass('header-expend');
-});
 
 
-// ⭐ 新增這段：點 mobile-nav 任何一個 <a> 時，先關 menu + 解鎖捲動
-$('.mobile-nav a').on('click', function () {
-  // 關閉 mobile nav
-  $('.mobile-nav').css("opacity", "1.0").animate({opacity: 0}, 50, function () {
-    $('.mobile-nav').css("visibility", "hidden");
-  });
-
-  // 解鎖滾動
-  $(document).unbind("scroll");
-
-  // 還原漢堡圖示狀態
-  const $ham = $('.nav-ham');
-  if ($ham.hasClass('openclicked')) {
-    $ham.animate({opacity:0},300,function(){
-      $('.nav-ham-logo').toggleClass('nav-logo-changer');
-    }).animate({opacity:1},300);
-    $ham.removeClass('openclicked');
-  }
-
-  // 還原 header 狀態
-  $('.page-header').removeClass('header-limitH');
-  $('.page-header-bg').removeClass('header-expend');
-});
 //及時測試信箱正確
 
 var email = document.getElementById('mail');
@@ -271,55 +213,119 @@ function sendMail() {
 // 原文是inputs.forEach(function(input){})
      
 
-document.addEventListener('DOMContentLoaded', function () {
-  const header = document.querySelector('.page-header-bg');
-  const headerHeight = header ? header.offsetHeight : 0;
+// header組件
+$(function () {
+  // ====== 共用參數 ======
+  const $header   = $('.page-header');      // ✅ 用 header 本體
+  const $nav      = $('.mobile-nav');
+  const $ham      = $('.nav-ham');
 
-  const navLinks = document.querySelectorAll('.header_nav a, .mobile-nav a');
+  // 取得 header 高度（之後要扣掉避免被蓋住）
+  function getHeaderHeight() {
+    return $header.outerHeight() || 0;
+  }
 
-  const sectionMap = {
-    'index.html': 'home',
-    'about.html': 'about',
-    'contact.html': 'contact'
-  };
-
-  const currentPage = (location.pathname.split('/').pop() || 'index.html');
-  const isIndex = (currentPage === 'index.html' || currentPage === '');
-
+  // 滑到指定 ID，讓它卡在 header 底下
   function scrollToIdTop(id) {
-    const target = document.getElementById(id);
-    if (!target) return;
+    const $target = $('#' + id);
+    if ($target.length === 0) return;
 
-    const top = target.getBoundingClientRect().top + window.pageYOffset;
+    const top = $target.offset().top - getHeaderHeight();
+
     window.scrollTo({
-      top: top - headerHeight,
+      top,
       behavior: 'smooth'
     });
   }
 
-  // 主選單點擊事件
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (!href || !sectionMap[href]) return; // 跳過 Work 或其他
+  // ====== 漢堡 / header 狀態 ======
+  function setHamState(isOpen) {
+    $ham
+      .stop(true, true)
+      .animate({ opacity: 0 }, 150, function () {
+        $ham.toggleClass('openclicked', isOpen);
+        $('.page-header').toggleClass('header-limitH', isOpen);
+        $('.page-header-bg').toggleClass('header-expend', isOpen);
 
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+        $(this).animate({ opacity: 1 }, 150);
+      });
+  }
 
-      const targetId = sectionMap[href];
+  function openMenu() {
+    $('body').addClass('no-scroll');
 
-      if (isIndex) {
-        // index.html → 滑動到上方
-        scrollToIdTop(targetId);
-      } else {
-        // 其他頁 → 導回 index.html#id
-        window.location.href = 'index.html#' + targetId;
-      }
+    const $items = $nav.children(); // li 等子元素
+
+    $nav
+      .stop(true, true)
+      .css({ visibility: 'visible', opacity: 0 });
+
+    $items
+      .stop(true, true)
+      .css({ opacity: 0 });
+
+    $nav.animate({ opacity: 1 }, 150, function () {
+      $items.animate({ opacity: 1 }, 150);
     });
+
+    setHamState(true);
+  }
+
+  function closeMenu() {
+    const $items = $nav.children();
+
+    $items
+      .stop(true, true)
+      .animate({ opacity: 0 }, 150)
+      .promise()
+      .done(function () {
+        $nav
+          .stop(true, true)
+          .animate({ opacity: 0 }, 150, function () {
+            $nav.css('visibility', 'hidden');
+            $('body').removeClass('no-scroll');
+            setHamState(false);
+          });
+      });
+  }
+
+  // ====== header label + mobile nav 點擊 (滑到區塊) ======
+  const $navItems = $('.header_nav label[data-target], .mobile-nav p[data-target]');
+
+  $navItems.on('click', function (e) {
+    const id = this.dataset.target;
+    if (!id) return;
+
+    const isInMobile = $(this).closest('.mobile-nav').length > 0;
+
+    if (isInMobile) {
+      e.stopPropagation();
+      scrollToIdTop(id);
+      closeMenu();
+    } else {
+      scrollToIdTop(id);
+    }
   });
 
-  // index.html 進場時如果帶著 hash，就捲到該區域
-  if (isIndex && window.location.hash) {
+  // ====== hash 進場（例如 index.html#about） ======
+  if (window.location.hash) {
     const id = window.location.hash.substring(1);
     setTimeout(() => scrollToIdTop(id), 10);
   }
+
+  // ====== 漢堡按鈕：開 / 關切換 ======
+  $ham.on('click', function (e) {
+    e.stopPropagation();
+
+    if ($ham.hasClass('openclicked')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // ====== 點整個 mobile-nav 背景：關閉（空白處也能關） ======
+  $nav.on('click', function () {
+    closeMenu();
+  });
 });
